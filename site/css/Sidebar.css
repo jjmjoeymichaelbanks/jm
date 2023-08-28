@@ -1,0 +1,190 @@
+#container #sidebar {
+  background-color: var(--color-secondary);
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 280px;
+  left: -280px;
+  z-index: 12;
+  top: .3px;
+}
+
+#container #sidebar #content #basic {
+  position: relative;
+  margin: 15px auto;
+  margin-left: 10px;
+  overflow: hidden;
+  margin-top: 0;
+  width: 260px;
+  bottom: 0;
+}
+
+#container #sidebar #content #basic input[type=text] {
+  background-color: var(--hover-background-color);
+  border: var(--border-color);
+  color: var(--fill-color);
+  position: relative;
+  overflow: hidden;
+  font-size: 12px;
+  margin: 0 auto;
+  display: block;
+  width: 260px;
+  padding: 5px;
+  top: 10px;
+}
+
+#container #sidebar .circleloader {
+  border-bottom: .3px solid var(--fill-color);
+}
+
+#container #sidebar #content::-webkit-scrollbar {
+  display: none;
+}
+
+#container #sidebar #content {
+  background-color: transparent;
+  scrollbar-width: none;
+  height: fit-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: auto;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+}
+
+#container #sidebar #content .anim,
+#container #sidebar #content .bg,
+#container #sidebar #content .exclude,
+#container #sidebar #content .fav,
+#container #sidebar #content .set,
+#container #sidebar #content .themes {
+  background-color: transparent !important;
+  color: var(--fill-color);
+  padding-bottom: 5px;
+  padding-left: 10px;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: default;
+  font-size: 12px;
+  height: 31.5px;
+  width: 95%;
+}
+
+#container #sidebar #content .anim .animations,
+#container #sidebar #content .bg .adjust,
+#container #sidebar #content .themes .border,
+#container #sidebar #content .set .choose,
+#container #sidebar #content .fav .favorite,
+#container #sidebar #content .exclude .parse {
+  background-color: transparent !important;
+  color: var(--fill-color);
+  width: calc(100% - 9px);
+  overflow: hidden;
+  font-weight: 50;
+  font-size: 12px;
+  padding: 9px;
+  height: 15px;
+}
+
+#container #sidebar #content .anim .animations:hover,
+#container #sidebar #content .bg .adjust:hover,
+#container #sidebar #content .themes .border:hover,
+#container #sidebar #content .set .choose:hover,
+#container #sidebar #content .fav .favorite:hover,
+#container #sidebar #content .exclude .parse:hover {
+  background-color: var(--hover-background-color) !important;
+}
+
+#container #sidebar #content .anim .animate,
+#container #sidebar #content .bg .background,
+#container #sidebar #content .fav .feed,
+#container #sidebar #content .exclude .option,
+#container #sidebar #content .set .settings,
+#container #sidebar #content .themes .theme {
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: default;
+  padding: 5px;
+}
+
+#container #sidebar #content .anim .animate:hover,
+#container #sidebar #content .bg .background:hover:not(#url),
+#container #sidebar #content .fav .feed:hover,
+#container #sidebar #content .exclude .option:hover,
+#container #sidebar #content .set .settings:hover,
+#container #sidebar #content .theme:hover {
+  background-color: var(--hover-background-color) !important;
+}
+
+#container #sidebar #content .cat {
+  background-color: transparent !important;
+  color: var(--fill-color);
+  letter-spacing: .5px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  overflow: hidden;
+  cursor: default;
+  font-size: 12px;
+  display: flex;
+  height: 15px;
+  width: 100%;
+}
+
+#container #sidebar #content .min {
+  margin: 10px;
+  width: 100%;
+}
+
+#container #sidebar #content .min input[type=text] {
+  background-color: var(--hover-background-color);
+  border: var(--border-color);
+  color: var(--fill-color);
+  caret-color: transparent;
+  border-radius: 2px;
+  font-size: 12px;
+  outline: none;
+  height: 25px;
+  width: 250px;
+}
+
+#container #sidebar #content #url {
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+#container #sidebar #content .url {
+  margin: 0;
+}
+
+#container #sidebar #content .url input[type=text] {
+  background-color: var(--hover-background-color);
+  border: var(--border-color);
+  color: var(--fill-color);
+  caret-color: transparent;
+  border-radius: 2px;
+  padding-left: 5px;
+  font-size: 12px;
+  outline: none;
+  height: 25px;
+  width: 95%;
+}
+
+#container #sidebar #content .sel {
+  background-color: transparent !important;
+  color: var(--fill-color);
+  overflow: hidden;
+  cursor: default;
+  font-size: 12px;
+  padding: 10px;
+  height: 15px;
+}
