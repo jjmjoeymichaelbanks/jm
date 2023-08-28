@@ -311,7 +311,7 @@ let onlySearch = false;
 
 */
 
-let quickFeeds = true;
+let quickFeeds = false;
 
 /*
     scrollIntoView [boolean/integer]
