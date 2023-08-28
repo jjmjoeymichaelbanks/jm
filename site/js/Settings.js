@@ -603,8 +603,9 @@ let exclude = [`Buy`, `Sale`, `Save`, `Price`, `Shop`, `Directions`, `Map`, `Cou
 
 */
 
+const cors = `https://joeymichaelbanks-0a60fe3f1d10.herokuapp.com/`;
 //const cors = `https://cors-anywhere.herokuapp.com/`;
-  const cors = `https://corsproxy.io/?`;
+//const cors = `https://corsproxy.io/?`;
 
 /*
     api [string]
