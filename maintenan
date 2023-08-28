@@ -1,0 +1,12 @@
+#!/bin/bash ssl ssh keygen for repository directory nand cli git input
+cd ~/nand
+# update changelog
+git pull --no-edit
+# execute out [edit first] text to commit
+./maintenance/rip.sh > ~/nand/maintenance/rip.txt
+# push
+git add maintenance/ripsites].txt
+# title of commit
+git commit -m "maintenance"
+# allocate
+git push

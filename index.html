@@ -1,0 +1,331 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link id='favicon' rel="icon" type="image/png" href="favicon.ico">
+    <script type='text/javascript' src='site/js/Settings.js'></script>
+    <script src="https://kit.fontawesome.com/1a31cd0145.js"></script>
+</head>
+<body>
+  <div id='container' style='display:none'>
+      <div id='sidebar' class='mainTransition invertScrollbar'>
+        <div class='fa fa-sliders-h hide' title='Search'></div>
+        <div id='content'></div>
+        <img id='greetz' src='site/images/687474~2.svg'>
+      </div>
+      <div id='guide'></div>
+      <div id='main' class='mainTransition'>
+        <div id='group'>
+          <div class='air'></div>
+          <div class='result'></div>
+        </div>
+        <div id='xml'>
+          <div class='center'>
+            <div class='channel'></div>
+          </div>
+          <div class='content'>
+            <div class='status'></div>
+            <div class='suggestions'></div>
+          </div>
+        </div>
+        <div id='check'>
+          <div class='trademark'>n@nd</div>
+          <div class='loader double-circle' style='display:none;'></div>
+          <div class="animation" style='display:none;'>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div id="load" style='display:none;top:0;margin-left:-170px'>
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+          </div>
+          <div class="bars" style='display:none;'></div>
+        </div>
+          <div class='fa fa-sliders-h sb' title='Side Bar'></div>
+          <div id='dots'>
+              <div class="fill"></div>
+              <div class="fill"></div>
+              <div class="fill"></div>
+              <div class="fill"></div>
+              <div class="fill"></div>
+          </div>
+          <div id='progressBar'></div>
+          <div id='option'>
+              <div id='mobileHome' class='fa fa-home' title='Home'></div>
+              <div class='fa fa-heart joi' title='Read'></div>
+              <div class='fa fa-sun' title='Visual'></div>
+              <div class='fa fa-camera-retro' title='View'></div>
+              <div class='fa fa-expand-alt' title='Expand'></div>
+          </div>
+          <div id='top'>
+              <div id='arm'>
+                <div class='fa fa-sliders-h bar' title='Side Bar'></div>
+                  <form id='search' class='hold' action='#'>
+                      <div id='home'></div>
+                      <div id='input'>
+                          <div class='icon'>
+                              <div class='fa fa-search'></div>
+                          </div>
+                          <input id='view' type='text' value='Search' style='display:none'>
+                      </div>
+                      <div id='match'>
+                          <div class='listing invertScrollbar'></div>
+                      </div>
+                  </form>
+                  <div id='option'>
+                      <div id='home' class='fa fa-home' title='Home'></div>
+                      <div class='fa fa-heart joi' title='Read'></div>
+                      <div class='fa fa-sun' title='Visual'></div>
+                      <div class='fa fa-camera-retro' title='View'></div>
+                      <div class='fa fa-expand-alt' title='Expand'></div>
+                  </div>
+              </div>
+          </div>
+          <div id='visit' style='display:flex;opacity:0;transition:all 10000ms'>
+              <div id='page'>
+                <div id='social' class='mainTransition'>
+                  <div class='fa fa-git'></div>
+                </div>
+                <div id='options' class='mainTransition'>
+                  <div id='toggle' class='fa fa-sun' title='Visual'></div>
+                  <div class='fa fa-heart joi' title='Read'></div>
+                  <div class='fa fa-user-cog' title='Safe Search'></div>
+                </div>
+                  <form id='front' action='#'>
+                      <div class='focus'>
+                          <div class='icon fa fa-search'></div>
+                          <input id='guest' type='text' placeholder='Search'>
+                          <div class='button'>
+                              <div class='buttonSearch fas fa-search'></div>
+                          </div>
+                      </div>
+                      <div id='under'></div>
+                      <div id='label'>
+                          <div id='show'>Quick feeds</div>
+                          <div id='link'>
+                              <div class='fa-angle-up'></div>
+                          </div>
+                      </div>
+                      <div id='first'>
+                          <div class='listing invertScrollbar'></div>
+                      </div>
+                  </form>
+                  <div id='quick' class='invisible'>
+                      <div class='left fa-minus' style='display:none'></div>
+                      <div class='right fa-plus'></div>
+                      <div id='feed'></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id='notify'></div>
+      <script>
+      let dir = "site/css/";
+      let ext = ".css";
+      let obj = [
+        "Group",
+        "Guide",
+        "Input",
+        "Feed",
+        "Request",
+        "Content",
+        "Animation",
+        "Sidebar",
+        "Class",
+        "Custom",
+        "Fonts",
+      ];
+      for (var file of obj) {
+        let path = dir + file + ext;
+        let script = document.createElement("link");
+        script.type = "text/css";
+        script.rel = "stylesheet";
+        script.href = path;
+        document.styleSheet = script;
+        document.getElementsByTagName("head")[0].appendChild(script);
+      }
+
+      let directory = "site/js/";
+      let extension = ".js";
+      let files = [
+        "addons/FileSaver",
+        "build/Build",
+        "build/feed/Asset",
+        "build/feed/Translations",
+        "build/group/Category",
+        "build/guide/Guide",
+        "build/input/Input",
+        "build/sidebar/Animation",
+        "build/sidebar/Background",
+        "build/sidebar/Form",
+        "build/sidebar/List",
+        "build/sidebar/Filter",
+        "build/sidebar/Option",
+        "build/sidebar/Sidebar",
+        "build/sidebar/Settings",
+        "build/sidebar/Theme",
+        "build/xml/Content",
+        "build/xml/Courtesy",
+        "build/xml/Attribute",
+        "build/xml/Footer",
+        "build/xml/Item",
+        "build/xml/Suggest",
+        "build/youtube/Youtube",
+        "build/youtube/Attribute",
+        "main/display/Cleanup",
+        "main/display/Click",
+        "main/display/Expand",
+        "main/display/Flex",
+        "main/display/Group",
+        "main/display/Legacy",
+        "main/display/Resize",
+        "main/display/Topbar",
+        "main/display/Visit",
+        "main/display/xml",
+        "main/feed/Click",
+        "main/feed/Display",
+        "main/feed/Generate",
+        "main/feed/Touch",
+        "main/group/Category",
+        "main/group/Click",
+        "main/group/Assets",
+        "main/group/Reverse",
+        "main/group/Write",
+        "main/guide/Click",
+        "main/guide/Events",
+        "main/guide/Guide",
+        "main/guide/Sticky",
+        "main/guide/Touch",
+        "main/image/Click",
+        "main/image/Source",
+        "main/image/Attributes",
+        "main/image/Dimensions",
+        "main/input/Events/Click",
+        "main/input/Events/Keyup",
+        "main/input/Events/Mouse",
+        "main/input/Events/Submit",
+        "main/input/Filter",
+        "main/input/Listing",
+        "main/input/Input",
+        "main/sidebar/Events/Animations",
+        "main/sidebar/Events/Background",
+        "main/sidebar/Events/Favorites",
+        "main/sidebar/Events/Filter",
+        "main/sidebar/Events/Mouse",
+        "main/sidebar/Events/Settings",
+        "main/sidebar/Events/Themes",
+        "main/sidebar/Display",
+        "main/sidebar/Click",
+        "main/sidebar/Star",
+        "main/sidebar/Swipe",
+        "main/xml/Events/Scroll",
+        "main/xml/Events/Touch",
+        "main/xml/Append",
+        "main/xml/Click",
+        "main/xml/Hash",
+        "main/xml/Request",
+        "main/xml/Suggest",
+        "main/xml/Status",
+        "main/xml/Title",
+        "main/Core",
+        "main/Click",
+        "main/Helpers",
+        "main/Notify",
+        "main/Progress",
+        "main/Prototype",
+        "main/Touch",
+        "main/Wheel",
+        "main/Assets",
+        "main/Init"
+      ];
+
+      for (var file of files) {
+        let path = directory + file + extension;
+        let script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = path;
+        if (file === `main/Core` || file === `main/Assets` || file === `main/Helpers`)
+          document.getElementsByTagName("head")[0].appendChild(script);
+        else
+          setTimeout(
+            function() {
+              document.getElementsByTagName("head")[0].appendChild(script);
+            }, 300
+          )
+        if (file === `main/Assets`)
+          script.onload = (function () {
+            let ext = ['id', 'description', 'uri', 'hash']
+            let startup = setInterval(function () {
+              setTimeout(function () {
+                if (typeof menu === `object`) {
+                  for (let i = 0; i <= menu.length - 1; i++) {
+                    var index = Math.floor(Math.random() * (3 - (-1)) + -1)
+                    if (index === -1)
+                      menu[i][`title`] =
+                      cyrb53(
+                        i.toString()
+                      )
+                    else menu[i][`title`] =
+                      cyrb53(
+                        menu[i][ext[index]]
+                      )
+                  }
+                  clearInterval(startup);
+                }
+              }, 300);
+            }, 300);
+          })();
+      }
+      let place = `site/js/themes/`;
+      let type = `.js`;
+      for (i = 0; i <= themes.length - 1; i++) {
+        theme = themes[i].obFn;
+        let path = place + theme + type;
+        let script = document.createElement(`script`);
+        script.type = `text/javascript`;
+        script.src = path;
+        document.getElementsByTagName(`head`)[0].appendChild(script);
+        if (set === theme)
+          script.onload = (function () {
+            let startup = setInterval(function () {
+              setTimeout(function () {
+                if (typeof eval(set) === `function`) {
+                  window[set]();
+                  clearInterval(startup);
+                }
+              }, 350);
+            }, 500);
+          })();
+      }
+      for (i = 0; i <= themes.length - 1; i++) {
+        (function (i) {
+          document.addEventListener(
+            `click`,
+            function (event) {
+              if (event.target.classList.contains(themes[i].class)) {
+                window[themes[i].class]();
+                document.querySelector(`.border`).innerHTML = themes[i].class
+              }
+            },
+            false
+          );
+        })(i);
+      }
+      let source = document.createElement("link");
+      source.type = "text/css";
+      source.rel = "stylesheet";
+      source.href = `https://pro.fontawesome.com/releases/v5.9.0/css/all.css`;
+      document.styleSheet = source;
+      document.getElementsByTagName("head")[0].appendChild(source);
+      </script>
+</body>
+</html>
