@@ -70,7 +70,7 @@ let unloading = function () {
     Progress(true);
 };
 
-const cyrb53 = function(str, seed = 0) {
+const cyrb53 = function(str = -1, seed = 0) {
     let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
     for (let i = 0, ch; i < str.length; i++) {
         ch = str.charCodeAt(i);
