@@ -83,7 +83,6 @@ var Dimensions = function (
     ) {
       itemContainer.style.height = `80px`;
       itemPending.style.height = `80px`;
-      itemImage.style.height = `80px`;
     } else if (
       !cropImages
       &&

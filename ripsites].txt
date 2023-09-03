@@ -1,0 +1,1 @@
+{id:`PC World`,category:`Technology`,title:``,description:`PC World is one of the United Kingdom's largest retail chains of Mass Market Computer Megastores.`,uri:`https://www.pcworld.com/index.rss`,image:`PCWorld`,hash:`cO`,media:!0},

@@ -121,7 +121,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxWidth = `calc(80vw - 220px)`
+              (a) => a.style.maxWidth = `calc(100%)`
             );
       }
       else if (
