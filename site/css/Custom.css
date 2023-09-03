@@ -286,13 +286,6 @@
     width: 100%;
   }
 
-  .sideItem {
-    width: 320px !important;
-    display: inline-table;
-    margin-right: 50px;
-    height: 380px;
-  }
-
   #bottom {
     margin-bottom: 25px !important;
     margin-top: 25px !important;

@@ -354,7 +354,7 @@ let imageLoader = `double-circle`;
 
 */
 
-let cropImages = true;
+let cropImages = false;
 
 /*
     fadeIntoView [boolean/integer]

@@ -63,8 +63,8 @@
   text-align: justify;
   position: relative;
   width: 0px !important;
-  right: 215px !important;
-  left: 0px !important;
+  right: 0px !important;
+  left: -300px !important;
   top: 0;
 }
 
@@ -491,8 +491,8 @@
   height: fit-content;
   position: absolute;
   display: none;
-  width: 100%;
+  width: 98%;
   z-index: -1;
-  right: 150px !important;
+  left: 250px !important;
   top: 60px;
 }
