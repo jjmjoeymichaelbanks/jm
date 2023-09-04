@@ -249,7 +249,6 @@ _container
                     `aria-object`
                   )
           );
-          topMenuBarDisplay(topBar);
           _toggle.style.display = `none`;
           _visit.style.display = `none`;
         }
