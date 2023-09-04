@@ -140,10 +140,9 @@ var Sticky = function (pubArray) {
           (a) => a.style.maxWidth = `calc(100%)`
         );
           } else if (
-          youtubeMedia &&
-            category == `Youtube`
+          youtubeMedia
           )
-        }
+          {
         _guide
           .querySelectorAll(
           `.img`
