@@ -120,7 +120,14 @@ var Sticky = function (pubArray) {
           .querySelectorAll(
             `.img`
           )
-            .forEach(
+          if (
+          !youtubeMedia
+        ) {
+           .forEach(
+              (a) => a.style.maxWidth = `auto`
+            );
+      }
+           .forEach(
               (a) => a.style.maxWidth = `calc(100%)`
             );
       }
