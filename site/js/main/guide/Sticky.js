@@ -124,7 +124,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
            .forEach(
-              (a) => a.style.maxWidth = `auto`
+              (a) => a.style.maxWidth = `100%`
             );
       }
         _guide
