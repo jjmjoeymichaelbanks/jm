@@ -116,16 +116,10 @@ var Sticky = function (pubArray) {
             .forEach(
               (a) => a.style.maxHeight = `90vh`
             );
-        _guide
-          .querySelectorAll(
-            `.img`
-          )
-           .forEach(
-              (a) => a.style.maxWidth = `calc(100%)`
-            );
           if (
-          !youtubeMedia
-        ) {
+          !youtubeMedia &&
+            category == `Youtube`
+          ) {
         _guide
           .querySelectorAll(
             `.img`
@@ -133,7 +127,31 @@ var Sticky = function (pubArray) {
            .forEach(
               (a) => a.style.maxWidth = `100%`
             );
+          } else if (
+          youtubeMedia &&
+            category == `Youtube`
+          )
         }
+        _guide
+          .querySelectorAll(
+          `.img`
+        )
+        .forEach(
+          (a) => a.style.maxWidth = `calc(100%)`
+        );
+          } else if (
+          youtubeMedia &&
+            category == `Youtube`
+          )
+        }
+        _guide
+          .querySelectorAll(
+          `.img`
+        )
+        .forEach(
+          (a) => a.style.maxWidth = `calc(100%)`
+        );
+       }
       }
       else if (
         newImg.naturalHeight >= newImg.naturalWidth
