@@ -116,17 +116,21 @@ var Sticky = function (pubArray) {
             .forEach(
               (a) => a.style.maxHeight = `90vh`
             );
+          if (
+          !youtubeMedia
+        ) {
         _guide
           .querySelectorAll(
             `.img`
           )
-          if (
-          !youtubeMedia
-        ) {
            .forEach(
               (a) => a.style.maxWidth = `auto`
             );
       }
+        _guide
+          .querySelectorAll(
+            `.img`
+          )
            .forEach(
               (a) => a.style.maxWidth = `calc(100%)`
             );
