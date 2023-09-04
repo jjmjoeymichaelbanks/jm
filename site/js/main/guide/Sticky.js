@@ -131,7 +131,7 @@ var Sticky = function (pubArray) {
           youtubeMedia &&
             category == `Youtube`
           )
-        }
+          {
         _guide
           .querySelectorAll(
           `.img`
