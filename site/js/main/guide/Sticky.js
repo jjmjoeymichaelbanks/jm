@@ -63,7 +63,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxWidth = `100vw`
+              (a) => a.style.maxWidth = `48vw`
             );
         _guide.querySelector(`.header`).style.top = newImg.clientHeight - 60;
         _guide.querySelector(`.header`).style.width = `100vw`;
