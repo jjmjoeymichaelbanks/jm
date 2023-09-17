@@ -175,7 +175,7 @@ let sideBarLock = false;
 
 */
 
-let expand = true;
+let expand = false;
 
 /*
     showSplash [boolean/integer]

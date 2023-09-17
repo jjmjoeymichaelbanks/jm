@@ -65,13 +65,6 @@
     width: 88% !important;
   }
 
-  .sideItem {
-    width: 320px !important;
-    display: inline-table;
-    margin-right: 50px;
-    height: 380px;
-  }
-
   .item {
     width: 100% !important;
   }
@@ -123,7 +116,7 @@
   }
 
   .flexbox .item {
-    margin: 0 2px 2px 0 !important;
+    margin: 0 188px 2px 0 !important;
     height: fit-content !important;
     position: relative;
     width: 140px !important;
@@ -410,8 +403,9 @@
 
 @media (min-width: 426px) and (max-width: 767px) {
 
-  #main #social {
-      display: none !important;
+ .item:not(.flexbox .item) {
+    margin-bottom: 55px;
+    margin-left: 18px !important;
   }
 
   #options {

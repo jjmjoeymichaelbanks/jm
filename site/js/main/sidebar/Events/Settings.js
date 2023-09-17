@@ -26,7 +26,7 @@ _sidebar
             .target,
           List
         );
-        topMenuBarDisplay(topBar);
+
       }
       else if (
         evt

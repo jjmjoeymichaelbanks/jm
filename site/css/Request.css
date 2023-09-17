@@ -76,7 +76,7 @@
   font-size: 12px;
   display: flex;
   height: 5em;
-  width: 100%;
+  width: 75%;
 }
 
 .channel::-webkit-scrollbar {
@@ -132,6 +132,7 @@
   color: var(--fill-color);
   display: inline-block;
   padding-right: 30px;
+  width: fit-content;
   padding-left: 30px;
   padding-top: 10px;
   letter-spacing: 0;
