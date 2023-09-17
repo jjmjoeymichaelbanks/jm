@@ -39,12 +39,11 @@ let backgroundImage = [
 let themes = [
   { obFn: `Light`, class: `Light`, icon: `fa-terminal` },
   { obFn: `Night`, class: `Night`, icon: `fa-code` },
-  { obFn: `Informative`, class: `Informative`, icon: `fa-info` },
-  { obFn: `Solarized`, class: `Solarized`, icon: `fa-digital-tachograph` },
   { obFn: `Gentoo`, class: `Gentoo`, icon: `fa-users` },
 ];
 
 const favorites = [
+  `Reddit/Unix`,
   `Reddit/Wallpaper`,
   `Reddit/Wallpapers`,
   `Reddit/Los Angeles`,
@@ -58,11 +57,11 @@ const favorites = [
         Init.js
 
       Result
-        pretty bootup
+        app bootup animation
 
 */
 
-let bootup = true;
+let bootup = false;
 
 /*
     topBar [boolean/integer]
@@ -78,28 +77,13 @@ let bootup = true;
 let topBar = true;
 
 /*
-    showOption [boolean/integer]
-
-      Applications
-        guide, group, xml
-
-      Result
-        toggle option icons in topBar
-
-*/
-
-let showOption = true;
-
-/*
     display [boolean/integer]
 
       Applications
-        display/Sidescroll
         display/Legacy
         display/Flex
 
       Result
-        `sideScroll`,
         `flexBox`,
         `legacy`
 
@@ -311,7 +295,7 @@ let onlySearch = false;
 
 */
 
-let quickFeeds = false;
+let quickFeeds = true;
 
 /*
     scrollIntoView [boolean/integer]
@@ -409,7 +393,7 @@ let titleTruncate = 125;
 
 */
 
-let category = `Assets`;
+let category = `Local`;
 
 /*
     roundedEdge [boolean/integer]
@@ -418,7 +402,7 @@ let category = `Assets`;
         xmlHTMLBuild
 
       Result
-        round image edges
+        round image edge border
 
 */
 
@@ -465,7 +449,7 @@ let feedImages = true;
 
 */
 
-let youtubeMedia = false;
+let youtubeMedia = true;
 
 /*
     suggestionBuffer [integer]
@@ -478,7 +462,7 @@ let youtubeMedia = false;
 
 */
 
-let suggestionBuffer = 36;
+let suggestionBuffer = 12;
 
 /*
     contentStatusBuffer [integer]
@@ -491,7 +475,7 @@ let suggestionBuffer = 36;
 
 */
 
-let contentStatusBuffer = 7;
+let contentStatusBuffer = 3;
 
 /*
     omitGuide [boolean/integer]
@@ -589,7 +573,7 @@ let safeSearchIDs = [
 
 */
 
-let exclude = [`Buy`, `Sale`, `Save`, `Price`, `Shop`, `Directions`, `Map`, `Coupon`, `Travel`, `Videos`, `Media`, `Movies`];
+let exclude = [`Buy`, `Sale`, `Save`, `Price`, `Shop`, `Directions`, `Map`, `Coupon`, `Travel`, `Videos`, `Media`, `Movies`, `Detail`];
 
 /*
     cors [string]
@@ -634,8 +618,7 @@ const api = `https://acktic-github-io-api.herokuapp.com/?url=`;
 */
 
 const translations = [
-  `Assets`,
-  `Reddit`,
+  `Read it`,
   `Local`,
   `Global`,
   `Sports`,
