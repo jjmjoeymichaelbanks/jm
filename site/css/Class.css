@@ -98,11 +98,11 @@
 }
 
 .flexbox .item {
-  margin: 0 110px 2px 0;
+  margin: 0 2px 2px 0;
   height: fit-content;
   position: relative;
   width: 300px !important;
-  left: -310px !important;
+  left: -210px !important;
 }
 
 .flexbox .item:nth-child(3n+1) {

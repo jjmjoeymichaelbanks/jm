@@ -253,6 +253,7 @@ var menu=[
 {id:`Reddit/Television`,category:`Reddit`,title:``,description:`Television subreddit streaming services and the best series.`,uri:`https://www.reddit.com/r/television/.rss`,image:`Television`,hash:`vT`,media:!1},
 {id:`Reddit/Thinkpad`,category:`Reddit`,title:``,description:`Thinkpad subreddit IBM and Lenovo ThinkPad laptop enthusiasts.`,uri:`https://www.reddit.com/r/thinkpad/.rss`,image:`Thinkpad`,hash:`tP`,media:!0},
 {id:`Reddit/Desktop`,category:`Reddit`,title:``,description:`Unix subreddit *NIX Desktops, Themes, and nifty Configurations.`,uri:`https://www.reddit.com/r/unixporn/.rss`,image:`UnixPorn`,hash:`uX`,media:!0},
+{id:`Reddit/iPhone`,category:`Reddit`,title:``,description:`Iphone backgrounds subreddit *NIX Desktops, Themes, and nifty Configurations.`,uri:`https://www.reddit.com/r/iphonewallpapers/.rss`,image:`iPhone`,hash:`Px`,media:!0},
 {id:`Reddit/Videos`,category:`Reddit`,title:``,description:`Videos subreddit best place for video content of all kinds.`,uri:`https://www.reddit.com/r/videos/.rss`,image:`Videos`,hash:`rV`,media:!1},
 {id:`Reddit/Wallpaper`,category:`Reddit`,title:``,description:`Wallpaper subreddit with Computer Desktops and Background Images.`,uri:`https://www.reddit.com/r/wallpaper/.rss`,image:`Wallpaper`,hash:`wP`,media:!0},
 {id:`Reddit/Wallpapers`,category:`Reddit`,title:``,description:`Wallpapers subreddit for Work-safe wallpapers from all over!`,uri:`https://www.reddit.com/r/wallpapers/.rss`,image:`Reddit`,hash:`Ws`,media:!0},

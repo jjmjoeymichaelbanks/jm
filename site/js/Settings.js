@@ -23,7 +23,7 @@ let set = `Night`;
 let backgroundImage = [
   {
     // note: path begins in index.html folder
-    path: "",
+    path: "site/images/Default.jpg",
     element: "container",
     position: "center",
     size: "cover",
@@ -43,7 +43,8 @@ let themes = [
 ];
 
 const favorites = [
-  `Reddit/Unix`,
+  `Reddit/iPhone`,
+  `Reddit/Desktop`,
   `Reddit/Wallpaper`,
   `Reddit/Wallpapers`,
   `Reddit/Los Angeles`,

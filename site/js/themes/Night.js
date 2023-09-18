@@ -29,8 +29,8 @@ var Night = function () {
     `rgba(7,7,7,.9)`
   );
   /*
-  if (backgroundImage[0].path != `https://raw.githubusercontent.com/acktic/.dotfiles/main/d453ae624e3d5e58b9890a998ec441b9.jpg`)
-    backgroundImage[0].path = `https://raw.githubusercontent.com/acktic/.dotfiles/main/d453ae624e3d5e58b9890a998ec441b9.jpg`
+  if (backgroundImage[0].path != `Defaultjpg`)
+    backgroundImage[0].path = `Default.jpg`
   document.querySelector(`#${backgroundImage[0].element}`)
     .style.backgroundImage = `url(${backgroundImage[0].path})`
   */
