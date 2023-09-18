@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\site",
-    "\\site\\js"
+    "\\site\\js",
+    "\\site\\js\\main"
   ],
-  "SelectedNode": "\\site\\js\\Settings.js",
+  "SelectedNode": "\\ripnandsite",
   "PreviewInSolutionExplorer": false
 }

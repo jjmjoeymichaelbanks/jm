@@ -116,7 +116,7 @@
   }
 
   .flexbox .item {
-    margin: 0 188px 2px 0 !important;
+    margin: 0 2px 2px 0 !important;
     height: fit-content !important;
     position: relative;
     width: 140px !important;
@@ -129,6 +129,10 @@
 
   .flexbox .item .wrap {
     display: none !important;
+  }
+
+  #xml .center {
+    left: -300px !important;
   }
 
   .item {
@@ -345,8 +349,12 @@
     top: 0px;
   }
 
+  #container #guide .sticky .header {
+    width: 70vw !important;
+  }
+
   #guide .sticky {
-    max-width: 60vw !important;
+    max-width: 70vw !important;
     border-top: none !important;
   }
 
@@ -368,7 +376,7 @@
   }
 
   #guide .sticky .src {
-    width: 100vw !important;
+    width: 70vw !important;
     display: block;
   }
 
