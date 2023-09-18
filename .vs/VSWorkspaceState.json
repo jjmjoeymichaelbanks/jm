@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\site",
+    "\\site\\css",
+    "\\site\\js"
   ],
+  "SelectedNode": "\\site\\css\\Fonts.css",
   "PreviewInSolutionExplorer": false
 }

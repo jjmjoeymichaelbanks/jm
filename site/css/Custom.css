@@ -120,7 +120,7 @@
     height: fit-content !important;
     position: relative;
     width: 140px !important;
-    left: -150px !important;
+    left: 7px !important;
   }
 
   .flexbox .item .header {
@@ -132,7 +132,7 @@
   }
 
   #xml .center {
-    left: -300px !important;
+    left: -290px !important;
   }
 
   .item {
@@ -184,8 +184,10 @@
 
   #main,
   #xml {
-    width: 100% !important
-    right: 0 !important;
+    padding-left: 55px !important;
+    width: 100% !important;
+    left: -2px !important;
+
   }
 
   #options {
@@ -193,9 +195,9 @@
       position: absolute;
       margin-right: auto;
       margin-left: auto;
-      left: 0;
       top: 115px;
       right: 0;
+      left: 0;
   }
 
   .btn .flip-back {
@@ -222,13 +224,6 @@
 
   .flexbox {
     width: 100% !important;
-  }
-
-  .img,
-  .image,
-  .pending {
-    width: 100% !important;
-    margin: 0 !important;
   }
 
   .listing {
@@ -266,7 +261,7 @@
     flex-wrap: wrap;
     margin-left: 0%;
     height: 500px;
-    top: -100px;
+    top: -10px;
     right: 0;
     left: 0;
   }
