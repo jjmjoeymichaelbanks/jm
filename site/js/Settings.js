@@ -175,7 +175,7 @@ let sideBarLock = false;
 
 */
 
-let expand = false;
+let expand = true;
 
 /*
     showSplash [boolean/integer]
@@ -739,7 +739,7 @@ const settings = [
   { name: `Blocks`, class: `Blocks` },
   { name: `Crop Images`, class: `cropImages` },
   { name: `Fade in Images`, class: `fadeIntoView` },
-  { name: `Scroll Into View`, class: `scrollIntoView` },
+/*{ name: `Scroll Into View`, class: `scrollIntoView` }, */
   { name: `Sidebar Backdrop`, class: `sideBarBackdrop` },
   { name: `Sidebar Dock`, class: `sideBarDock` },
   { name: `Only Search`, class: `onlySearch` },
