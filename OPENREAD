@@ -70,6 +70,8 @@ Notice
 
 Note
 ----
+  As of iOS 16.6.2 Safari copy paste attributes
+  not functioning...never tried alternate.
   <em>If the viewport is unstable when  
   images load turn on cropImages<br>
   Publish nsfw-api by python rest
