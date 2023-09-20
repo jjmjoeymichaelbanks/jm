@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\site"
+    "\\site",
+    "\\site\\js\\main\\sidebar\\Events"
   ],
   "SelectedNode": "\\site\\js",
   "PreviewInSolutionExplorer": false

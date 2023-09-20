@@ -41,7 +41,7 @@ var Sticky = function (pubArray) {
     }
 
     if (
-      window.innerWidth <= 425
+      window.innerWidth <= 410
     ) {
       _guide.querySelector(`.sticky .header`).style.position = `absolute`;
       _guide.querySelector(`.sticky .src`).style.display = `block`;
@@ -56,7 +56,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `5vh`
+              (a) => a.style.maxHeight = `25vh`
             );
         _guide
           .querySelectorAll(
@@ -64,6 +64,23 @@ var Sticky = function (pubArray) {
           )
             .forEach(
               (a) => a.style.maxWidth = `48vw`
+            );
+      else if (
+        newImg.naturalHeight>= newImg.naturalWidth
+      ) {
+        _guide
+          .querySelectorAll(
+            `.img`
+          )
+            .forEach(
+              (a) => a.style.maxHeight = `10vh`
+            );
+        _guide
+          .querySelectorAll(
+            `.img`
+          )
+            .forEach(
+              (a) => a.style.maxWidth = `55vw`
             );
         _guide.querySelector(`.header`).style.top = newImg.clientHeight - 60;
         _guide.querySelector(`.header`).style.width = `100vw`;
