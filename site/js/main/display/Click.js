@@ -81,9 +81,7 @@ _container
                 footerBuild(id)
               );
           }
-
-        }
-      },
+        },
     {
       passive:
       false

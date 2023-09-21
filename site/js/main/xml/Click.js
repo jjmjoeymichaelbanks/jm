@@ -424,64 +424,66 @@ _container
           evt.target.classList.contains(`fa-at`) ||
           evt.target.classList.contains(`site`)
         ) {
-          var menuObject =
-            evt.target.closest(`.item`).getAttribute(`aria-object`);
-          var pubIndex =
-            evt.target.closest(`.item`).getAttribute(`aria-item`);
-          document
-            .querySelector(
-              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .url`
-            ).value
-                .select();
+          evt
+            .target
+              .closest(
+                `.item`
+              )
+                .querySelector(
+                  `.url`
+                )
+                  .select();
+          notifyOption(`Site Copied`, `fa-check-circle`);
           document.execCommand(`copy`);
-          evt.stopPropagation();
         }
         else if (
           evt.target.classList.contains(`fa-share`) ||
           evt.target.classList.contains(`post`)
         ) {
-          var menuObject =
-            evt.target.closest(`.item`).getAttribute(`aria-object`);
-          var pubIndex =
-            evt.target.closest(`.item`).getAttribute(`aria-item`);
-          document
-            .querySelector(
-              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .share`
-            ).value
+          evt
+            .target
+              .closest(
+                `.item`
+              )
+                .querySelector(
+                  `.share`
+                )
                   .select();
+            notifyOption(`Hash Copied`, `fa-check-circle`);
           document.execCommand(`copy`);
-          evt.stopPropagation();
         }
         else if (
-          evt.target.classList.contains(`fa-camera`) ||
+          evt.target.classList.contains(`fa-copy`) ||
           evt.target.classList.contains(`picture`)
         ) {
           if (
             menu[id].id.match(/Youtube/g) &&
             youtubeMedia == true
           ) {
-          var menuObject =
-            evt.target.closest(`.item`).getAttribute(`aria-object`);
-          var pubIndex =
-            evt.target.closest(`.item`).getAttribute(`aria-item`);
-          document
-            .querySelector(
-              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .url`
-            ).value
-                    .select();
+          evt
+            .target
+              .closest(
+                `.item`
+              )
+                .querySelector(
+                  `.url`
+                )
+                  .select();
             document.execCommand(`copy`);
+            notifyOption(`Redirect Copied`, `fa-check-circle`);
           }
           else {
-          var menuObject =
-            evt.target.closest(`.item`).getAttribute(`aria-object`);
-          var pubIndex =
-            evt.target.closest(`.item`).getAttribute(`aria-item`);
-          document
-            .querySelector(
-              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .source`
-            ).value
-                    .select();
+          evt
+            .target
+              .closest(
+                `.item`
+              )
+                .querySelector(
+                  `.source`
+                )
+                  .select();
             document.execCommand(`copy`);
+            notifyOption(`Request Copied`, `fa-check-circle`);
           }
         }
       },
