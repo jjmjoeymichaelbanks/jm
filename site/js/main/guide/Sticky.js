@@ -131,7 +131,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `27vh`
+              (a) => a.style.maxHeight = `15vh`
             );
           if (
           !youtubeMedia &&
@@ -164,7 +164,7 @@ var Sticky = function (pubArray) {
           `.img`
         )
         .forEach(
-          (a) => a.style.maxWidth = `100%)`
+          (a) => a.style.maxWidth = `100%`
         );
        }
       }
