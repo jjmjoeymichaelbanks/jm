@@ -36,8 +36,7 @@ _container
           },
         4000);
     if (
-      _guide.style.display != `flex` &&
-      display !== `sideSroll`
+      _guide.style.display != `flex`
     )
       Swipe();
   },
