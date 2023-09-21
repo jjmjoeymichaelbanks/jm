@@ -65,7 +65,7 @@ var Sticky = function (pubArray) {
             .forEach(
               (a) => a.style.maxWidth = `48vw`
             );
-      else if (
+      } else if (
         newImg.naturalHeight>= newImg.naturalWidth
       ) {
         _guide
@@ -131,7 +131,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `40vh`
+              (a) => a.style.maxHeight = `27vh`
             );
           if (
           !youtubeMedia &&
@@ -153,7 +153,7 @@ var Sticky = function (pubArray) {
           `.img`
         )
         .forEach(
-          (a) => a.style.maxWidth = `100%)`
+          (a) => a.style.maxWidth = `35vw`
         );
           } else if (
           youtubeMedia
