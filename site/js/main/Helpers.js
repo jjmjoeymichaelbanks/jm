@@ -70,6 +70,21 @@ let unloading = function () {
     Progress(true);
 };
 
+let notifyOption = function (String, Icon) {
+  _notify.innerHTML =
+    `
+    ${String} <div class='notifyIcon fa ${Icon}'></div>
+    `;
+  _notify.classList.add(`notify`);
+  _notify.style.display = `flex`;
+  setTimeout(
+    function() {
+      _notify.classList.remove(`notify`);
+      _notify.style.display = `none`;
+    }, 4250
+  )
+}
+
 const cyrb53 = function(str = -1, seed = 0) {
     let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
     for (let i = 0, ch; i < str.length; i++) {

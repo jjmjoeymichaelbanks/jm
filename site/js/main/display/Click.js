@@ -66,51 +66,6 @@ _container
               _main.scrollTop = leaveOff;
           }
 
-          if (
-            viewport[cycleViewport] == `sideScroll`
-          ) {
-            display = `sideScroll`;
-            notifyOption(`Side Scroll`, `fa-check-circle`)
-            let leaveOff = _main.scrollTop +
-              (
-                (
-                  parseInt(
-                    document.querySelectorAll(
-                      `.item`
-                    )
-                    .length
-                  )
-                  *
-                  parseInt(
-                    100
-                  )
-                )
-              );
-            Sidescroll();
-            _channel.scrollLeft = leaveOff;
-            (function () {
-              function checkPosition() {
-                let elements = _channel.querySelectorAll(`.image`);
-                for (
-                  let i = 0;
-                  i < elements.length;
-                  i++) {
-                  if (
-                    elements[i].querySelector(`.img`) &&
-                    elements[i].getBoundingClientRect().left -
-                    _channel.clientWidth
-                    <= _channel.clientWidth - _channel.clientWidth
-                  ) {
-                    elements[i].querySelector(`.img`).classList.add(`fade-in-element`);
-                    elements[i].querySelector(`.img`).classList.remove(`hidden`);
-                  }
-                }
-              }
-              _channel.addEventListener(
-                `scroll`,
-                checkPosition
-              );
-            })();
             if (
               document
                 .body

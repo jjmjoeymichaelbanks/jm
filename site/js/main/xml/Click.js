@@ -424,15 +424,15 @@ _container
           evt.target.classList.contains(`fa-at`) ||
           evt.target.classList.contains(`site`)
         ) {
-          evt
-            .target
-              .closest(
-                `.item`
-              )
-                .querySelector(
-                  `.url`
-                )
-                  .select();
+          var menuObject =
+            evt.target.closest(`.item`).getAttribute(`aria-object`);
+          var pubIndex =
+            evt.target.closest(`.item`).getAttribute(`aria-item`);
+          document
+            .querySelector(
+              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .url`
+            ).value
+                .select();
           document.execCommand(`copy`);
           evt.stopPropagation();
         }
@@ -440,14 +440,14 @@ _container
           evt.target.classList.contains(`fa-share`) ||
           evt.target.classList.contains(`post`)
         ) {
-          evt
-            .target
-              .closest(
-                `.item`
-              )
-                .querySelector(
-                  `.share`
-                )
+          var menuObject =
+            evt.target.closest(`.item`).getAttribute(`aria-object`);
+          var pubIndex =
+            evt.target.closest(`.item`).getAttribute(`aria-item`);
+          document
+            .querySelector(
+              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .share`
+            ).value
                   .select();
           document.execCommand(`copy`);
           evt.stopPropagation();
@@ -460,26 +460,26 @@ _container
             menu[id].id.match(/Youtube/g) &&
             youtubeMedia == true
           ) {
-            evt
-              .target
-                .closest(
-                  `.item`
-                )
-                  .querySelector(
-                    `.url`
-                  )
+          var menuObject =
+            evt.target.closest(`.item`).getAttribute(`aria-object`);
+          var pubIndex =
+            evt.target.closest(`.item`).getAttribute(`aria-item`);
+          document
+            .querySelector(
+              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .url`
+            ).value
                     .select();
             document.execCommand(`copy`);
           }
           else {
-            evt
-              .target
-                .closest(
-                  `.item`
-                )
-                  .querySelector(
-                    `.source`
-                  )
+          var menuObject =
+            evt.target.closest(`.item`).getAttribute(`aria-object`);
+          var pubIndex =
+            evt.target.closest(`.item`).getAttribute(`aria-item`);
+          document
+            .querySelector(
+              `[aria-object='${menuObject}'][aria-item='${pubIndex}'] .source`
+            ).value
                     .select();
             document.execCommand(`copy`);
           }
