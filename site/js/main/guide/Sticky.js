@@ -41,7 +41,7 @@ var Sticky = function (pubArray) {
     }
 
     if (
-      window.innerWidth <= 410
+      window.innerWidth <= 430
     ) {
       _guide.querySelector(`.sticky .header`).style.position = `absolute`;
       _guide.querySelector(`.sticky .src`).style.display = `block`;
@@ -60,13 +60,13 @@ var Sticky = function (pubArray) {
             );
         _guide
           .querySelectorAll(
-            `.img`
+                `.img`
           )
             .forEach(
-              (a) => a.style.maxWidth = `48vw`
+              (a) => a.style.maxWidth = `25vw`
             );
       } else if (
-        newImg.naturalHeight>= newImg.naturalWidth
+        newImg.naturalHeight >= newImg.naturalWidth
       ) {
         _guide
           .querySelectorAll(
@@ -131,7 +131,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `15vh`
+              (a) => a.style.maxHeight = `5vh`
             );
           if (
           !youtubeMedia &&
@@ -156,7 +156,7 @@ var Sticky = function (pubArray) {
           (a) => a.style.maxWidth = `35vw`
         );
           } else if (
-          youtubeMedia
+          youtubeMedia && category == `Youtube`
           )
           {
         _guide
@@ -176,7 +176,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `90vh`
+              (a) => a.style.maxHeight = `70vh`
             );
         _guide
           .querySelectorAll(

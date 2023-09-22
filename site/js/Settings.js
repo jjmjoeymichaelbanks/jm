@@ -505,7 +505,7 @@ let omitGuide = true;
 
 */
 
-let hash = `short`;
+let hash = `long`;
 
 /*
     safeSearch [integer]

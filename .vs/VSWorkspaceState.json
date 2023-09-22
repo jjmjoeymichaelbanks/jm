@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\site",
-    "\\site\\js",
-    "\\site\\js\\main",
-    "\\site\\js\\main\\display",
-    "\\site\\js\\main\\xml"
+    "\\site\\js\\main\\image"
   ],
-  "SelectedNode": "\\site\\js\\main\\display\\Click.js",
+  "SelectedNode": "\\OPENREAD",
   "PreviewInSolutionExplorer": false
 }
