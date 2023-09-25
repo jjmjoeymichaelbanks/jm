@@ -450,7 +450,7 @@ let feedImages = true;
 
 */
 
-let youtubeMedia = true;
+let youtubeMedia = false;
 
 /*
     suggestionBuffer [integer]
