@@ -76,7 +76,7 @@
   font-size: 12px;
   display: flex;
   height: 5em;
-  width: 210px%;
+  width: 210px;
 }
 
 .channel::-webkit-scrollbar {
