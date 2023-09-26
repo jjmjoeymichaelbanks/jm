@@ -3,7 +3,7 @@ let doc = `n@nd`
 
 
 // initial theme
-let set = `Night`;
+let set = `Gentoo`;
 
 /*
     backgroundImage [array]
