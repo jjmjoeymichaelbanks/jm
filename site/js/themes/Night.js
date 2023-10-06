@@ -28,10 +28,8 @@ var Night = function () {
     `--borderless-color`,
     `rgba(7,7,7,.9)`
   );
-  /*
-  if (backgroundImage[0].path != `Defaultjpg`)
-    backgroundImage[0].path = `Default.jpg`
+  if (backgroundImage[0].path != `Autumn.webp`)
+    backgroundImage[0].path = `Autumn.webp`
   document.querySelector(`#${backgroundImage[0].element}`)
     .style.backgroundImage = `url(${backgroundImage[0].path})`
-  */
 };

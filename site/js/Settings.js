@@ -23,7 +23,7 @@ let set = `Gentoo`;
 let backgroundImage = [
   {
     // note: path begins in index.html folder
-    path: "site/images/Autumn.jpg",
+    path: "site/images/Autumn.webp", // also set in theme file.js
     element: "container",
     position: "center",
     size: "contain",
