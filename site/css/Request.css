@@ -76,7 +76,7 @@
   font-size: 12px;
   display: flex;
   height: 5em;
-  width: 210px;
+  width: 230px;
 }
 
 .channel::-webkit-scrollbar {
@@ -140,7 +140,7 @@
   cursor: pointer;
   height: 25px;
   bottom: 3px;
-  left: 55px;
+  left: 0;
 }
 
 .btn:hover,

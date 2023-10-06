@@ -23,10 +23,10 @@ let set = `Gentoo`;
 let backgroundImage = [
   {
     // note: path begins in index.html folder
-    path: "site/images/Default.jpg",
-    element: "container",
+    path: "site/images/Autumn.webp",
+    element: "center",
     position: "center",
-    size: "cover",
+    size: "contain",
   },
 ];
 
