@@ -7,12 +7,11 @@
   - <em>A Really Simple Syndicate</em>
   - <em>A Enriched Site Summary</em>
   - <em>No Scraping only parsing</em>
-
+  - <em>complicated syntax index</em>
 
 ### Use
 
   <em>Navigate index.html in your browser locally</em>  
-  `node app.js` <em>web server @ localhost:3000</em>  
 
 ### Add
 
@@ -40,13 +39,6 @@
 `npm install`  
 `heroku create`  
 `git push heroku master`  
-
-<em>deploy your own nsfw-api on heroku</em>  
-`git clone https://github.com/EugenCepoi/nsfw_api`  
-`heroku container:login`  
-`heroku create YOUR_APP_NAME`  
-`heroku container:push web --app YOUR_APP_NAME`  
-`heroku container:release web --app YOUR_APP_NAME`  
 
 Want to Contribute?
 ----

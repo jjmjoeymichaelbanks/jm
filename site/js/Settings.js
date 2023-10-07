@@ -588,22 +588,9 @@ let exclude = [`Buy`, `Sale`, `Save`, `Price`, `Shop`, `Directions`, `Map`, `Cou
 
 */
 
-const cors = `https://joeymichaelbanks-0ba8ad68e67b.herokuapp.com/`;
+const cors = `https://oembanks-1615a0956a22.herokuapp.com/`;
 //const cors = `https://cors-anywhere.herokuapp.com/`;
 //const cors = `https://corsproxy.io/?`;
-
-/*
-    api [string]
-
-      Applications
-        image/Attributes
-
-      Result
-        ty heroku (filter nsfw feeds with score)
-
-*/
-
-const api = `https://acktic-github-io-api.herokuapp.com/?url=`;
 
 /*  translations [array]
 
