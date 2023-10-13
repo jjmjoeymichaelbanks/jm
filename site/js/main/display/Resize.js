@@ -13,7 +13,8 @@ window
       ) {
 
         if (
-          window.innerWidth <= 1024
+          window.innerWidth <= 1024 &&
+          window.innerWidth <= 768
           ) {
           _display.style.display = `none`;
           display = `legacy`;
@@ -23,7 +24,55 @@ window
         else if (
           window.innerWidth >= 769
         ) {
-          display = `flexBox`;
+            display = `flexBox`;
+            var height = 0;
+            var second = 0;
+            var groups = 0;
+            var column = _channel.querySelectorAll(`.item:nth-child(3n+1)`);
+            for (
+                let i = 0;
+                i < column.length - 1;
+                i++
+            )
+            height += column[i].clientHeight;
+            var column = _channel.querySelectorAll(`.item:nth-child(3n+2)`);
+            for (
+                let i = 0;
+                i < column.length - 1;
+                i++
+          )
+            second += column[i].clientHeight;
+            var column = _channel.querySelectorAll(`.item:nth-child(3n+3)`);
+            for (
+                let i = 0;
+                i < column.length - 1;
+                i++
+            )
+            groups += column[i].clientHeight;
+            var max =
+            Math.max(
+                height,
+                second,
+                groups
+            );
+            var min =
+                Math.min(
+                height,
+                second,
+                groups
+            );
+            if (
+                height == min
+            )
+            var min = `left:-210px;order:1`;
+            else if (
+                second == min
+            )
+            var min = `left:-210px;order:2`;
+            else if (
+                groups == min
+            )
+            var min = `left:-210px;order:3`;
           Flex()
 
         }
