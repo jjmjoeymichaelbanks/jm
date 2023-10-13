@@ -1,5 +1,4 @@
 let xmlHTMLBuild = function (htmlArray) {
-  let filterBlur = document.createElement(`div`);
   let original = document.createElement(`div`);
   let publish = document.createElement(`div`);
   let classic = document.createElement(`div`);
@@ -53,15 +52,10 @@ let xmlHTMLBuild = function (htmlArray) {
     display == `flexBox`
   )
     item.classList.add(`flex`);
-  if (
-    display == `sideScroll`
-  )
-    item.classList.add(`sideItem`);
   item.setAttribute(`ext`, htmlArray.externalURI);
   loader.classList.add(`loader`, `double-circle`);
   publish.setAttribute(`text`, htmlArray.title);
   pending.classList.add(`blink`, `pending`);
-  filterBlur.classList.add(`filterBlur`);
   classic.classList.add(`classic`);
   ago.classList.add(`ago`, `zulu`);
   object.id = htmlArray.pubIndex;

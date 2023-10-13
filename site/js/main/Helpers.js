@@ -196,20 +196,6 @@ let scrollToElm = function (
   );  // duration in seconds
 }
 
-let sideScrollToElm = function (
-  touch,
-  container,
-  elm,
-  duration
-){
-  let pos = getRelativePos(elm);
-  sideScrollTo(
-    touch,
-    container,
-    pos.left,
-    50);  // duration in seconds
-}
-
 let getRelativePos = function (elm){
   var pPos = elm.parentNode.getBoundingClientRect(), // parent pos
       cPos = elm.getBoundingClientRect(), // target pos
@@ -245,34 +231,6 @@ let scrollTo = function (
 
         element.scrollTop = start + change * easeInOutQuad(t);
 
-        if( t < 1 )
-            window.requestAnimationFrame(animateScroll);
-        else
-            onDone && onDone();
-    };
-    animateScroll();
-  }
-}
-
-let sideScrollTo = function (
-  touchmove,
-  element,
-  to,
-  duration,
-  onDone
-) {
-  if (
-    touchmove
-  ) {
-    var start = element.scrollLeft,
-        change = to + start,
-        startTime = performance.now(),
-        val, now, elapsed, t;
-    function animateScroll(){
-        now = performance.now();
-        elapsed = (now - startTime)/50;
-        t = (elapsed/duration);
-        element.scrollLeft = start + change * easeInOutQuad(t);
         if( t < 1 )
             window.requestAnimationFrame(animateScroll);
         else

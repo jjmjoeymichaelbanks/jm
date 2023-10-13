@@ -39,15 +39,15 @@ let Flex = function () {
   if (
     height == min
   )
-    var min = `left:-310px;order:1`;
+    var min = `left:-210px;order:1`;
   else if (
     second == min
   )
-    var min = `left:-310px;order:2`;
+    var min = `left:-210px;order:2`;
   else if (
     groups == min
   )
-    var min = `left:-310px;order:3`;
+    var min = `left:-210px;order:3`;
 
   if (
     !Reader

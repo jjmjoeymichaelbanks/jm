@@ -81,7 +81,6 @@ var Append = function (id) {
     }
   }
     if (
-      display !== `sideScroll` &&
       !Reader &&
       !first &&
       document.body.contains(
@@ -106,21 +105,6 @@ var Append = function (id) {
       _channel.scrollTop = 0;
       _center.scrollTop = 0;
       _main.scrollTop = 0;
-    } else if (
-      display == `sideScroll` &&
-      !Reader &&
-      !first
-    ) {
-      touchmove = true;
-      setTimeout(
-        function () {
-          sideScrollToElm(touchmove,
-            _channel,
-            _channel.querySelector(`[aria-object='${id}']`),
-            250
-          );
-        }, 250
-      )
     }
   if (pub.length > 1) {
     if (pub[pub.length - 1].dst) var oldest = pub[pub.length - 1].dst;
@@ -138,11 +122,6 @@ var Append = function (id) {
     display == `flexBox`
   )
     Flex();
-
-  else if (
-    display == `sideScroll`
-  )
-    SideScroll();
 
   else if (
     display == `legacy`
