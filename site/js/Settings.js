@@ -3,7 +3,7 @@ let doc = `n@nd`
 
 
 // initial theme
-let set = `Gentoo`;
+let set = `Night`;
 
 /*
     backgroundImage [array]
@@ -23,10 +23,10 @@ let set = `Gentoo`;
 let backgroundImage = [
   {
     // note: path begins in index.html folder
-    path: "site/images/Autumn.webp", // also set in theme file.js
+    path: "site/images/Belgin_London-Clock.png", // also set in theme file.js
     element: "container",
     position: "center",
-    size: "contain",
+    size: "cover",
   },
 ];
 
@@ -283,7 +283,7 @@ let toggleBorders = true;
 
 */
 
-let onlySearch = false;
+let onlySearch = true;
 
 /*
     quickFeeds [boolean/integer]
@@ -296,7 +296,7 @@ let onlySearch = false;
 
 */
 
-let quickFeeds = true;
+let quickFeeds = false;
 
 /*
     scrollIntoView [boolean/integer]
@@ -505,7 +505,7 @@ let omitGuide = true;
 
 */
 
-let hash = `long`;
+let hash = `short`;
 
 /*
     safeSearch [integer]

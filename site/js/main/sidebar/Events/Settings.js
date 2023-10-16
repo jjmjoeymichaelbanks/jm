@@ -154,23 +154,6 @@ _sidebar
                         `160px`
             );
         }
-        else if (
-          display != `sideScroll` &&
-          !cropImages
-        ) {
-          _main
-            .querySelectorAll(
-              `.image`
-            )
-              .forEach(
-                (a) =>
-                  a
-                    .style
-                      .height
-                        =
-                      `auto`
-            );
-        }
         if (
           document
             .body
@@ -224,7 +207,6 @@ _sidebar
           onlySearch
         ) {
           _options.style.display = `none`;
-          _social.style.display = `none`;
           _under.style.display = `none`;
           _show.style.display = `none`;
           _link.style.display = `none`;

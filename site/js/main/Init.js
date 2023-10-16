@@ -522,7 +522,7 @@ setTimeout(
       onlySearch
     ) {
       _options.style.display = `none`;
-      _social.style.display = `none`;
+      _social.style.display = `block`;
       _under.style.display = `none`;
       _show.style.display = `none`;
       _link.style.display = `none`;

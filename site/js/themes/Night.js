@@ -28,8 +28,8 @@ var Night = function () {
     `--borderless-color`,
     `rgba(7,7,7,.9)`
   );
-  if (backgroundImage[0].path != `Autumn.webp`)
-    backgroundImage[0].path = `Autumn.webp`
+  if (backgroundImage[0].path != `site/images/Belgin_London-Clock.png`)
+    backgroundImage[0].path = `site/images/Belgin_London-Clock.png`
   document.querySelector(`#${backgroundImage[0].element}`)
     .style.backgroundImage = `url(${backgroundImage[0].path})`
 };

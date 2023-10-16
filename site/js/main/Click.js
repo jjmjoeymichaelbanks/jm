@@ -179,21 +179,6 @@ _container
         window[set]();
       }
       else if (
-        event.target.classList.contains(
-          `fa-user-cog`
-        )
-      ) {
-        safeSearch = safeSearch != true;
-        if (
-          safeSearch
-        )
-          notifyOption(`Safe Search`, `fa-check-circle`);
-        else if (
-          !safeSearch
-        )
-          notifyOption(`Safe Search`, `fa-times-circle`);
-      }
-      else if (
         evt.target.classList.contains(
           `fa-git`
         )
