@@ -3,7 +3,7 @@ let doc = `n@nd`
 
 
 // initial theme
-let set = `Night`;
+let set = `Light`;
 
 /*
     backgroundImage [array]
@@ -24,9 +24,9 @@ let backgroundImage = [
   {
     // note: path begins in index.html folder
     path: "site/images/Belgin_London-Clock.png", // also set in theme file.js
-    element: "container",
+    element: "main",
     position: "center",
-    size: "cover",
+    size: "auto",
   },
 ];
 
