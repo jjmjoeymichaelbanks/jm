@@ -3,8 +3,8 @@
     "",
     "\\site",
     "\\site\\js",
-    "\\site\\js\\main"
+    "\\site\\js\\themes"
   ],
-  "SelectedNode": "\\site\\js\\main\\Init.js",
+  "SelectedNode": "\\site\\js\\themes\\Example.js",
   "PreviewInSolutionExplorer": false
 }

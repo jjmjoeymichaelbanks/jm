@@ -11,8 +11,7 @@ let Sidebar = function (Value) {
     );
     if (
         sideBarMouse == false ||
-        window.innerWidth <= 425 &&
-        display == `sideScroll`
+        window.innerWidth <= 425
       )
       _min.style.cssText = `display: block !important;`
       _bar.style.display = `none`;

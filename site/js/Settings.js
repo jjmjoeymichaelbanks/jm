@@ -23,8 +23,8 @@ let set = `Light`;
 let backgroundImage = [
   {
     // note: path begins in index.html folder
-    path: "site/images/Belgin_London-Clock.png", // also set in theme file.js
-    element: "main",
+    path: "../../site/images/Belgin_London-Clock.png", // also set in theme file.js
+    element: "container",
     position: "center",
     size: "auto",
   },

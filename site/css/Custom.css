@@ -119,8 +119,8 @@
     margin: 0 2px 2px 0 !important;
     height: fit-content !important;
     position: relative;
-    width: 140px !important;
-    left: 7px !important;
+    width: 133px !important;
+    left: 6px !important;
   }
 
   .flexbox .item .header {
@@ -140,6 +140,7 @@
   }
 
   .sb {
+    left: -5px !important;
     top: 7px !important;
   }
 
@@ -315,7 +316,7 @@
   }
 
   #option {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     top: calc(100% - 50px);
     position: fixed;
     display: flex;

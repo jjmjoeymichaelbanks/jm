@@ -1,7 +1,6 @@
 let Swipe = function () {
   if (
-    display !== `sideScroll` &&
-    touchendX - 75 >
+    touchendX - 88 >
     touchstartX
   ) {
     onScreen = true;
