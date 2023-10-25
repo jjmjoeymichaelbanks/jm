@@ -508,16 +508,16 @@ let omitGuide = false;
 let hash = `short`;
 
 /*
-    safeSearchScore [string]
+    safeSearch [string]
 
       Applications
         image/Attributes
 
       Result
-        greater than string filtered
+        greater than string filtered [unused]
 
 */
-
+let safeSearch = false // previous legacy def
 let safeSearchScore = `0.013473876751959324`;
 
 /*
