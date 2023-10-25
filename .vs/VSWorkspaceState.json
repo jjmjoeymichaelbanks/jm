@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\site",
-    "\\site\\js",
-    "\\site\\js\\themes"
+    "\\site"
   ],
-  "SelectedNode": "\\site\\js\\themes\\Example.js",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

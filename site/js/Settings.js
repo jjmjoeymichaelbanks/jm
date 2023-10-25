@@ -283,7 +283,7 @@ let toggleBorders = true;
 
 */
 
-let onlySearch = true;
+let onlySearch = false;
 
 /*
     quickFeeds [boolean/integer]
@@ -296,7 +296,7 @@ let onlySearch = true;
 
 */
 
-let quickFeeds = false;
+let quickFeeds = true;
 
 /*
     scrollIntoView [boolean/integer]
@@ -309,7 +309,7 @@ let quickFeeds = false;
 
 */
 
-let scrollIntoView = true;
+let scrollIntoView = false;
 
 /*
     imageLoader [boolean/integer]
@@ -326,7 +326,7 @@ let scrollIntoView = true;
 
 */
 
-let imageLoader = `double-circle`;
+let imageLoader = `v-bars`;
 
 /*
     cropImages [boolean/integer]
@@ -368,7 +368,7 @@ let fadeIntoView = false;
 
 */
 
-let loading = `percent`;
+let loading = `dots`;
 
 /*
     titleTruncate [integer]
@@ -407,7 +407,7 @@ let category = `Local`;
 
 */
 
-let roundedEdge = false;
+let roundedEdge = true;
 
 /*
     onlyImages [boolean/integer]
@@ -489,7 +489,7 @@ let contentStatusBuffer = 3;
 
 */
 
-let omitGuide = true;
+let omitGuide = false;
 
 /*
     hash [boolean/integer]
@@ -506,32 +506,6 @@ let omitGuide = true;
 */
 
 let hash = `short`;
-
-/*
-    safeSearch [integer]
-
-      Applications
-        image/Attributes
-
-      Result
-        blur filter nsfw
-
-*/
-
-let safeSearch = false;
-
-/*
-    guideSafeSearch [boolean/integer]
-
-      Applications
-        image/Attributes
-
-      Result
-        apply safeSearch to guide
-
-*/
-
-let guideSafeSearch = false;
 
 /*
     safeSearchScore [string]
@@ -574,7 +548,7 @@ let safeSearchIDs = [
 
 */
 
-let exclude = [`Buy`, `Sale`, `Save`, `Price`, `Shop`, `Directions`, `Map`, `Coupon`, `Travel`, `Videos`, `Media`, `Movies`, `Detail`];
+let exclude = [`Buy`, `Sale`, `Save`, `Price`, `Shop`, `Directions`, `Coupon`, `Travel`, `Videos`, `Media`, `Movies`, `Detail`];
 
 /*
     cors [string]
@@ -589,8 +563,8 @@ let exclude = [`Buy`, `Sale`, `Save`, `Price`, `Shop`, `Directions`, `Map`, `Cou
 */
 
 const cors = `https://oembanks-1615a0956a22.herokuapp.com/`;
-//const cors = `https://cors-anywhere.herokuapp.com/`;
-//const cors = `https://corsproxy.io/?`;
+//const cors = `https://cors-anywhere.herokuapp.com/` url;
+//const cors = `https://corsproxy.io/?` url;
 
 /*  translations [array]
 
