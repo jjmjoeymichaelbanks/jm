@@ -98,20 +98,6 @@ let Progress = function (done) {
           }
         }
         if (
-          display == `sideScroll`
-        )
-          _channel.addEventListener(
-            `scroll`,
-            checkPosition
-          );
-        else if (
-          display !== `sideScroll`
-        )
-          _main.addEventListener(
-            `scroll`,
-            checkPosition
-          );
-        if (
           scrollIntoView
         )
           setTimeout(
@@ -121,18 +107,6 @@ let Progress = function (done) {
           1000)
         else checkPosition();
       })();
-    }
-    if (
-      display == `sideScroll`
-    ) {
-      _center.classList.remove(`scroll-into-view`);
-      _channel.classList.add(`sideChannel`);
-      _center.style.top = `60px`;
-      _channel
-        .querySelectorAll(`.item`)
-          .forEach(
-            (a) => a.classList.add(`sideItem`)
-          );
     }
   }
   else if (

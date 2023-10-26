@@ -517,7 +517,6 @@ let hash = `short`;
         greater than string filtered [unused]
 
 */
-let safeSearch = false // previous legacy def
 let safeSearchScore = `0.013473876751959324`;
 
 /*

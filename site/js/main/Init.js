@@ -385,8 +385,8 @@ setTimeout(
             `none`
       }
 
-    adj = menu.slice();
-    randomizeAssets(adj);
+    //adj = menu.slice();
+    //randomizeAssets(adj);
 
     setTimeout(
       function () {

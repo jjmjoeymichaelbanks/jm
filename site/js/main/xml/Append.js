@@ -46,40 +46,6 @@ var Append = function (id) {
         );
     }
   }
-  if (
-    safeSearchIDs.includes(menu[id].id) ||
-    safeSearch
-  ) {
-    for (
-      let i = 0;
-      i <= images.length - 1;
-      i++
-    ) {
-      Attributes(
-        false,
-        id,
-        images[i].element,
-        images[i].src
-      );
-    }
-  } else if (
-    !safeSearchIDs.includes(
-      menu[id].id
-    )
-  ) {
-    for (
-      let i = 0;
-      i <= images.length - 1;
-      i++
-    ) {
-      Attributes(
-        false,
-        id,
-        images[i].element,
-        images[i].src
-      );
-    }
-  }
     if (
       !Reader &&
       !first &&

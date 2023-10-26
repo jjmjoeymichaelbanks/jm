@@ -46,6 +46,7 @@
 .entity,
 .query,
 .quickTranslation {
+  width: 115%;
   z-index: -1;
 }
 
