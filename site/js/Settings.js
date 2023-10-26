@@ -309,7 +309,7 @@ let quickFeeds = true;
 
 */
 
-let scrollIntoView = false;
+let scrollIntoView = true;
 
 /*
     imageLoader [boolean/integer]
