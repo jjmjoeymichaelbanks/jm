@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\site",
-    "\\site\\js",
-    "\\site\\js\\main"
+    "\\site"
   ],
-  "SelectedNode": "\\ripnandsite",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

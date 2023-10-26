@@ -6,6 +6,14 @@
 curl -q -s "https://acktic.github.io/nand/site/js/main/Assets.js" | grep -oP 'uri:`.*' | sed 's/uri://g' | cut -f1 -d, | tr -d '`' | grep http | xargs -n1 -P 10 -I {} bash -c 'curl --connect-timeout 10 -q -s -q -k "{}" -I | grep -e rss -e text -e xml -e html -e json >/dev/null && echo "Feed is live: {}" || echo "Feed is dead: {}"' | gawk '{ print strftime("[%Y-%m-%d %H:%M:%S]"), $0 }'
 
 # Unused no images below
+{id:`Drudge Report`,category:`World`,title:``,description:`Drudge Report consists mainly of stories from other outlets.`,uri:`http://feeds.feedburner.com/DrudgeReportFeed`,image:`DrudgeReport`,hash:`rG`,media:!1},
+{id:`Euro News`,category:`World`,title:``,description:`Euro News is unapologetically impartial and seeks to offer a diversity of viewpoints.`,uri:`http://feeds.feedburner.com/euronews/en/home`,image:`EuroNews`,hash:`nU`,media:!1},
+{id:`Market Watch`,category:`World`,title:``,description:`Market Watch published by Dow Jones & Co., tracks the pulse of markets for engaged investors.`,uri:`http://feeds.marketwatch.com/marketwatch/topstories`,image:`MarketWatch`,hash:`kW`,media:!1},
+{id:`TIME Magazine`,category:`World`,title:``,description:`Time Magazine is one of the most authoritative and informative guides to what is happening in the world.`,uri:`http://feeds.feedburner.com/time/topstories?format=xml`,image:`TIME`,hash:`mI`,media:!1},
+{id:`Unilad co uk`,category:`World`,title:``,description:`Unilad.co.uk a British Internet media company and website.`,uri:`https://unilad.co.uk/feed`,image:`Unilad`,hash:`uL`,media:!0},
+{id:`USA Today World News`,category:`World`,title:``,description:`USA Today delivers local and national information on sports, entertainment, finance, technology, and more.`,uri:`http://rssfeeds.usatoday.com/usatoday-newstopstories&x=1`,image:`USAToday`,hash:`aY`,media:!0},
+{id:`Washington Examiner World`,category:`World`,title:``,description:`Washington Examiner World News.`,uri:`http://feeds.feedburner.com/dcexaminer/WorldNews`,image:`WashingtonExaminer`,hash:`hX`,media:!1},
+{id:`CNBC World`,category:`World`,title:``,description:`CNBC headlines from around the world.`,uri:`https://www.cnbc.com/id//device/rss/rss.html`,image:`CNBC`,hash:`nB`,media:!1},
 {id:`USA Today Tech`,category:`Technology`,title:``,description:`USA Today Technology is an internationally distributed American daily, middle-market Newspaper.`,uri:`http://rssfeeds.usatoday.com/usatoday-techtopstories&x=1`,image:`USAToday`,hash:`sY`,media:!0},
 {id:`Washington Examiner Tech`,category:`Technology`,title:``,description:`Washington Examiner Science and Technology.`,uri:`http://feeds.feedburner.com/dcexaminer/tech`,image:`WashingtonExaminer`,hash:`xW`,media:!1},
 {id:`Computer Weekly`,category:`Technology`,title:`740057785`,description:`Computer Weekly stands out from the many Technology Websites.`,uri:`https://www.computerweekly.com/rss/RSS-Feed.xml`,image:`ComputerWeekly`,hash:`Wc`,media:!1},
