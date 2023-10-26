@@ -46,6 +46,18 @@ var Append = function (id) {
         );
     }
   }
+    for (
+      let i = 0;
+      i <= images.length - 1;
+      i++
+    ) {
+      Attributes(
+        false,
+        id,
+        images[i].element,
+        images[i].src
+      );
+    }
     if (
       !Reader &&
       !first &&
