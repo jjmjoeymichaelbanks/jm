@@ -6,6 +6,8 @@
 curl -q -s "https://acktic.github.io/nand/site/js/main/Assets.js" | grep -oP 'uri:`.*' | sed 's/uri://g' | cut -f1 -d, | tr -d '`' | grep http | xargs -n1 -P 10 -I {} bash -c 'curl --connect-timeout 10 -q -s -q -k "{}" -I | grep -e rss -e text -e xml -e html -e json >/dev/null && echo "Feed is live: {}" || echo "Feed is dead: {}"' | gawk '{ print strftime("[%Y-%m-%d %H:%M:%S]"), $0 }'
 
 # Unused no images below
+{id:`USA Today Tech`,category:`Technology`,title:``,description:`USA Today Technology is an internationally distributed American daily, middle-market Newspaper.`,uri:`http://rssfeeds.usatoday.com/usatoday-techtopstories&x=1`,image:`USAToday`,hash:`sY`,media:!0},
+{id:`Washington Examiner Tech`,category:`Technology`,title:``,description:`Washington Examiner Science and Technology.`,uri:`http://feeds.feedburner.com/dcexaminer/tech`,image:`WashingtonExaminer`,hash:`xW`,media:!1},
 {id:`Computer Weekly`,category:`Technology`,title:`740057785`,description:`Computer Weekly stands out from the many Technology Websites.`,uri:`https://www.computerweekly.com/rss/RSS-Feed.xml`,image:`ComputerWeekly`,hash:`Wc`,media:!1},
 {id:`The Gadget Flow`,category:`Technology`,title:`150320899`,description:`The Gadget Flow Stay up to date with the tech, gear, and most incredible crowdfunding campaigns.`,uri:`http://feeds.feedburner.com/thegadgetflow`,image:`TheGadgetFlow`,hash:`aH`,media:!0},
 {id:`BetaNews`,category:`Technology`,title:``,description:`BetaNews is a leading source of Technology and Analysis.`,uri:`http://feeds.betanews.com/bn`,image:`BetaNews`,hash:`Wb`,media:!1},
