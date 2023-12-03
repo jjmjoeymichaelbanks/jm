@@ -90,7 +90,7 @@ let topBar = true;
 
 */
 
-let display = `flexBox`;
+let display = `legacy`;
 
 /*
     Reader [boolean/integer]
@@ -326,7 +326,7 @@ let scrollIntoView = true;
 
 */
 
-let imageLoader = `v-bars`;
+let imageLoader = `loading`;
 
 /*
     cropImages [boolean/integer]
@@ -353,7 +353,7 @@ let cropImages = false;
 
 */
 
-let fadeIntoView = false;
+let fadeIntoView = true;
 
 /*
     loading [string]
@@ -368,7 +368,7 @@ let fadeIntoView = false;
 
 */
 
-let loading = `dots`;
+let loading = `percent`;
 
 /*
     titleTruncate [integer]
