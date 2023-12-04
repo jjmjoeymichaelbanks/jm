@@ -90,7 +90,7 @@ let topBar = true;
 
 */
 
-let display = `legacy`;
+let display = `flexbox`;
 
 /*
     Reader [boolean/integer]
@@ -353,7 +353,7 @@ let cropImages = false;
 
 */
 
-let fadeIntoView = true;
+let fadeIntoView = false;
 
 /*
     loading [string]
