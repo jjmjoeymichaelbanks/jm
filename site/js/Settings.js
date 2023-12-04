@@ -90,7 +90,7 @@ let topBar = true;
 
 */
 
-let display = `flexbox`;
+let display = `flexBox`;
 
 /*
     Reader [boolean/integer]
