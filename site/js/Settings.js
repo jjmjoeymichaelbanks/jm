@@ -49,8 +49,8 @@ const favorites = [
   `Reddit/Wallpapers`,
   `Reddit/Los Angeles`,
   `Reddit/San Francisco`,
-  `4Channel/Wallpapers`,
-  `4Channel/Technology`,
+  `Reddit/Wallpapers`,
+  `Reddit/Technology`,
 ]
 
 /*
