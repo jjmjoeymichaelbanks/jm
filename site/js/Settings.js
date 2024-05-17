@@ -706,6 +706,7 @@ const settings = [
   { name: `Sidebar Backdrop`, class: `sideBarBackdrop` },
   { name: `Sidebar Dock`, class: `sideBarDock` },
   { name: `Only Search`, class: `onlySearch` },
+  { name: `Only Pic`, class: `onlyImages` },
 ];
 
 const background = [
