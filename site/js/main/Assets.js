@@ -23,7 +23,10 @@
        *** Youtube uri
        userName: https://www.youtube.com/feeds/videos.xml?user=
        channel: https://www.youtube.com/feeds/videos.xml?channel_id=
-
+var menu=[
+{id:`4Chan/Wallpapers`,category:`Local`,title:``,description:`Wallpapers General`,uri:`https://boards.4chan.org/wg/index.rss`,image:`4chan`,hash:`WP`,media:!1},
+{id:`4Chan/Technology`,category:`Local`,title:``,description:`G Technology`,uri:`https://boards.4chan.org/g/index.rss`,image:`4chan`,hash:`4G`,media:!0},
+]
 */
 
 var menu=[
