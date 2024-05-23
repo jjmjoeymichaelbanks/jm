@@ -302,16 +302,22 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
             !src.match(/4cdn/g)
           )
             request.send();
-          else {
+        else {
+        var request = new XMLHttpRequest();
+        request.open("GET", cors + src, true);
+        request.setRequestHeader(`Access-Control-Allow-Origin`, `*`);
+        request.setRequestHeader(`X-Requested-With`, `*`);
+        request.responseType = "blob";
             Dimensions(
               menuObject,
               pubIndex,
               Height,
               Width
-            )
-            itemImage.setAttribute(`src`, `https://oembanks-1615a0956a22.herokuapp.com/` + src);
+            );
+            itemImage.setAttribute(`src`, e.target.result);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
+          }
         }
       };
     };
@@ -330,11 +336,4 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
       }
     };
   };
-    if (
-      src.match(/4cdn/g)
-    ) {
-            itemImage.setAttribute(`src`, `https://oembanks-1615a0956a22.herokuapp.com/` + src);
-            itemPending.style.display = `none`;
-            itemImage.style.display = `block`;
-    }  
 }
