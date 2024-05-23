@@ -82,15 +82,12 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
     &&
     !src
       .match(
-        /comments|feeds|fsdn|undefined/g
+        /comments|4cdn|feeds|fsdn|undefined/g
       )
   ) {
     let newImg;
     newImg = new Image();
-    if (
-      !src.match(/4cdn/g)
-    )
-      newImg.setAttribute(`src`, src);
+    newImg.setAttribute(`src`, src);
     newImg.onerror = function ()
       {
         if (
