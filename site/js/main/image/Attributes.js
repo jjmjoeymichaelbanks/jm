@@ -204,6 +204,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               ) {
               var request = new XMLHttpRequest();
               request.open("GET", cors + src, true);
+              request.setRequestHeader(`Cross-Origin-Resource-Policy`, `same-site`);
               request.setRequestHeader(`Access-Control-Allow-Origin`, `*`);
               request.setRequestHeader(`X-Requested-With`, `*`);
               request.responseType = "blob";
@@ -264,6 +265,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
         { //safeSearch false
         var request = new XMLHttpRequest();
         request.open("GET", cors + src, true);
+        request.setRequestHeader(`Cross-Origin-Resource-Policy`, `same-site`);
         request.setRequestHeader(`Access-Control-Allow-Origin`, `*`);
         request.setRequestHeader(`X-Requested-With`, `*`);
         request.responseType = "blob";
