@@ -87,7 +87,8 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
   ) {
     let newImg;
     newImg = new Image();
-    newImg.setAttribute(`src`, src);
+    !src.match(/4cdn/g)
+      newImg.setAttribute(`src`, src);
     newImg.onerror = function ()
       {
         if (
