@@ -326,7 +326,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
         attribute.style.height = `74px`;
       }
     };
-    console.log(src)
+  };
     if (
       src.match(/4cdn/g)
     ) {
@@ -334,5 +334,4 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
     }  
-  };
 }
