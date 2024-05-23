@@ -221,7 +221,6 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                   itemPending.style.display = `none`;
                   itemImage.style.display = `block`;
                 };
-              }
               request.onerror = function (e) {
                 if (onlyImages)
                   _channel.querySelector(
