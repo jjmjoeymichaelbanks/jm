@@ -24,7 +24,7 @@ _sidebar
         Star(
           evt
             .target,
-          List
+          true
         );
 
       }
@@ -123,54 +123,6 @@ _sidebar
           evt
             .target,
           sideBarBackdrop
-        );
-      }
-
-      else if (
-        evt
-          .target
-            .classList
-              .contains(
-                `cropImages`
-              )
-      ) {
-        cropImages = cropImages != true;
-        if (
-          cropImages
-        ) {
-          _main
-            .querySelectorAll(
-              `.img`
-            )
-              .forEach(
-                (a) =>
-                  a
-                    .closest(
-                      `.image`
-                    )
-                      .style
-                        .height
-                          =
-                        `160px`
-            );
-        }
-        if (
-          document
-            .body
-              .contains(
-                _center
-                  .querySelector(
-                    `.item`
-                  )
-              )
-            &&
-              display == `flexBox`
-        )
-          displayFlex();
-        Star(
-          evt
-            .target,
-          cropImages
         );
       }
 

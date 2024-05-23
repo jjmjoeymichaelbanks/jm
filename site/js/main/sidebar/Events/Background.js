@@ -260,7 +260,9 @@ _sidebar
               .style
                 .backgroundImage
                   =
-                `url(${backgroundImage[0].path})`
+	            _container
+        	      .style
+                	.backgroundImage
             _container
               .style
                 .backgroundImage
@@ -279,7 +281,9 @@ _sidebar
               .style
                 .backgroundImage
                   =
-                `url(${backgroundImage[0].path})`
+	            _main
+        	      .style
+                	.backgroundImage
             _main
               .style
                 .backgroundImage
