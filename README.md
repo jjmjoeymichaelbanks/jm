@@ -60,16 +60,7 @@ Notice
 
 Note
 ----
-  As of iOS 16.6.2 mobile copy paste attributes
-  not functioning...never tried alternate. 0
-  <em>If the viewport is unstable when  
-  images load turn on cropImages<br>
-  mobile guide  on image sizes 1
-  nsfw-api has been removed to 2
-  sideScroll _xml removed also 3
-  side space sidebar operated  4
-  overwrite settings bg default
-  in theme background directive5
+  As of iOS 16.6.2 mobile development tos'd
   thanks
 
 License
