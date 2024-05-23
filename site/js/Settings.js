@@ -49,8 +49,6 @@ const favorites = [
   `Reddit/Wallpapers`,
   `Reddit/Los Angeles`,
   `Reddit/San Francisco`,
-  `Reddit/Wallpapers`,
-  `Reddit/Technology`,
 ]
 
 /*
@@ -533,7 +531,7 @@ let safeSearchScore = `0.013473876751959324`;
 */
 
 let safeSearchIDs = [
-  `Reddit/NSFW`,
+
 ];
 
 /*
