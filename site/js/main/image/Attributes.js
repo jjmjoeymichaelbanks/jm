@@ -245,7 +245,6 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                 itemImage.setAttribute(`src`, src);
                 itemPending.style.display = `none`;
                 itemImage.style.display = `block`;
-                }
               }
             });
           })
