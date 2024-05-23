@@ -233,9 +233,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                   itemImage.remove();
                 };
               }
-              if (
-                !src.match(/4cdn/g)
-              )
+
                 request.send();
               else {
                 Dimensions(
