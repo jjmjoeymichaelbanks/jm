@@ -234,9 +234,9 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               }
               if (
                 !src.match(/4cdn/g)
-              )
+              ) {
                 request.send();
-              else {
+              } else {
                 Dimensions(
                   menuObject,
                   pubIndex,
