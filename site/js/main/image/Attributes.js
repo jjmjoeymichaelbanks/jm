@@ -82,15 +82,13 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
     &&
     !src
       .match(
-        /comments|4cdn|feeds|fsdn|undefined/g
+        /comments|feeds|fsdn|undefined/g
       )
   ) {
     let newImg;
     newImg = new Image();
-    if (
-      !src.match(/4cdn/g)
-    )
-    newImg.setAttribute(`src`, src);
+    !src.match(/4cdn/g)
+      newImg.setAttribute(`src`, src);
     newImg.onerror = function ()
       {
         if (
@@ -220,7 +218,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                     Height,
                     Width
                   )
-                  itemImage.setAttribute(`src`, cors + e.target.result);
+                  itemImage.setAttribute(`src`, e.target.result);
                   itemPending.style.display = `none`;
                   itemImage.style.display = `block`;
                 };
@@ -280,7 +278,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               Height,
               Width
             );
-            itemImage.setAttribute(`src`, cors + e.target.result);
+            itemImage.setAttribute(`src`, e.target.result);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
             }
@@ -302,17 +300,16 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
             !src.match(/4cdn/g)
           )
             request.send();
-        else {
+          else {
             Dimensions(
               menuObject,
               pubIndex,
               Height,
               Width
-            );
-            itemImage.setAttribute(`src`, cors + src);
+            )
+            itemImage.setAttribute(`src`, src);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
-          }
         }
       };
     };
