@@ -56,7 +56,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `25vh`
+              (a) => a.style.maxHeight = `45vh`
             );
         _guide
           .querySelectorAll(
@@ -94,7 +94,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `55vh`
+              (a) => a.style.maxHeight = `30vh`
             );
         _guide
           .querySelectorAll(
@@ -131,7 +131,7 @@ var Sticky = function (pubArray) {
             `.img`
           )
             .forEach(
-              (a) => a.style.maxHeight = `5vh`
+              (a) => a.style.maxHeight = `45vh`
             );
           if (
           !youtubeMedia &&
