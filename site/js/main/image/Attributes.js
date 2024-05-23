@@ -211,6 +211,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               request.onload = function () {
                 var read = new FileReader();
                 read.readAsDataURL(request.response);
+                read.onload = function (e) {
                   Dimensions(
                     menuObject,
                     pubIndex,
@@ -221,6 +222,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                   itemPending.style.display = `none`;
                   itemImage.style.display = `block`;
                 };
+              }
               request.onerror = function (e) {
                 if (onlyImages)
                   _channel.querySelector(
@@ -245,6 +247,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                 itemImage.setAttribute(`src`, src);
                 itemPending.style.display = `none`;
                 itemImage.style.display = `block`;
+                }
               }
             });
           })
