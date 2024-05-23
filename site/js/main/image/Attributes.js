@@ -211,7 +211,6 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               request.onload = function () {
                 var read = new FileReader();
                 read.readAsDataURL(request.response);
-                read.onload = function (e) {
                   Dimensions(
                     menuObject,
                     pubIndex,
