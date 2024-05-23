@@ -312,6 +312,14 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
         }
       };
     };
+    console.log(src)
+    if (
+      src.match(/4cdn/g)
+    ) {
+            itemImage.setAttribute(`src`, src);
+            itemPending.style.display = `none`;
+            itemImage.style.display = `block`;
+    }  
     newImg.onerror = function () {
       if (
         onlyImages
