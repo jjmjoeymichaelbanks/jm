@@ -243,7 +243,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                   Height,
                   Width
                 )
-                itemImage.setAttribute(`src`, src);
+                itemImage.setAttribute(`src`, cors + src);
                 itemPending.style.display = `none`;
                 itemImage.style.display = `block`;
                 }
@@ -297,16 +297,16 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
             };
           if (
             !src.match(/4cdn/g)
-          )
+          ) {
             request.send();
-          else {
+          } else {
             Dimensions(
               menuObject,
               pubIndex,
               Height,
               Width
             )
-            itemImage.setAttribute(`src`, src);
+            itemImage.setAttribute(`src`, cors + src);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
         }
