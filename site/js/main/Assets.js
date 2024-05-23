@@ -23,8 +23,7 @@
        *** Youtube uri
        userName: https://www.youtube.com/feeds/videos.xml?user=
        channel: https://www.youtube.com/feeds/videos.xml?channel_id=
-var menu=[
-]
+
 */
 
 var menu=[
@@ -162,8 +161,8 @@ var menu=[
 {id:`Vanity Fair`,category:`Global`,title:``,description:`Vanity Fair is a magazine of Entertainment Culture, Fashion, and Current Affairs.`,uri:`https://www.vanityfair.com/feed/rss`,image:`VanityFair`,hash:`fV`,media:!0},
 {id:`Yahoo Entertainment`,category:`Global`,title:``,description:`Yahoo Entertainment, Celebrity, Movie, TV Headlines.`,uri:`https://www.yahoo.com/entertainment/rss`,image:`Yahoo`,hash:`eY`,media:!0},
 {id:`The Washington Times Entertainment`,category:`Global`,title:``,description:`The Washington Times Show Business and Entertainment Stories.`,uri:`https://www.washingtontimes.com/rss/headlines/culture/entertainment`,image:`TheWashingtonTimes`,hash:`gW`,media:!0},
-{id:`Reddit/Walls`,category:`Reddit`,title:``,description:`Wallpapers General`,uri:`https://boards.4chan.org/wg/index.rss`,image:`4chan`,hash:`wL`,media:!1},
-{id:`Reddit/Techs`,category:`Reddit`,title:``,description:`Technology`,uri:`https://boards.4chan.org/g/index.rss`,image:`4chan`,hash:`wG`,media:!0},
+{id:`Reddit/Walls`,category:`Reddit`,title:``,description:`Wallpapers General`,uri:`https://boards.4chan.org/wg/index.rss`,image:`4chan`,hash:`4w`,media:!0},
+{id:`Reddit/Techs`,category:`Reddit`,title:``,description:`Technology`,uri:`https://boards.4chan.org/g/index.rss`,image:`4chan`,hash:`4g`,media:!0},
 {id:`Reddit/AMD`,category:`Reddit`,title:``,description:`AMD subreddit dedicated to Advanced Micro Devices and its products.`,uri:`https://www.reddit.com/r/Amd/.rss`,image:`AMD`,hash:`aD`,media:!0},
 {id:`Reddit/Android`,category:`Reddit`,title:``,description:`Android subreddit Reviews, Tips, and Discussions about Rooting, Tutorials, and Apps.`,uri:`https://www.reddit.com/r/android/.rss`,image:`Android`,hash:`nD`,media:!1},
 {id:`Reddit/Apple`,category:`Reddit`,title:``,description:`Apple subreddit discusses Apple Devices and Software, including News, Rumors, Opinions and Analysis.`,uri:`https://www.reddit.com/r/apple/.rss`,image:`Apple`,hash:`pA`,media:!1},
