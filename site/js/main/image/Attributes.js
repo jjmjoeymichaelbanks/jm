@@ -333,7 +333,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
     if (
       src.match(/4cdn/g)
     ) {
-            itemImage.setAttribute(`src`, src);
+            itemImage.setAttribute(`src`, `https://oembanks-1615a0956a22.herokuapp.com/` + src);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
     }  
