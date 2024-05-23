@@ -220,7 +220,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                     Height,
                     Width
                   )
-                  itemImage.setAttribute(`src`, e.target.result);
+                  itemImage.setAttribute(`src`, cors + e.target.result);
                   itemPending.style.display = `none`;
                   itemImage.style.display = `block`;
                 };
@@ -280,7 +280,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               Height,
               Width
             );
-            itemImage.setAttribute(`src`, e.target.result);
+            itemImage.setAttribute(`src`, cors + e.target.result);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
             }
@@ -303,18 +303,13 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
           )
             request.send();
         else {
-        var request = new XMLHttpRequest();
-        request.open("GET", cors + src, true);
-        request.setRequestHeader(`Access-Control-Allow-Origin`, `*`);
-        request.setRequestHeader(`X-Requested-With`, `*`);
-        request.responseType = "blob";
             Dimensions(
               menuObject,
               pubIndex,
               Height,
               Width
             );
-            itemImage.setAttribute(`src`, cors + e.target.result);
+            itemImage.setAttribute(`src`, cors + src);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
           }
