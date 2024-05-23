@@ -23,7 +23,7 @@ let set = `Light`;
 let backgroundImage = [
   {
     // note: path begins in index.html folder
-    path: "../../site/images/Belgin_London-Clock.png", // also set in theme file.js
+    path: "site/images/Belgin_London-Clock.png",
     element: "container",
     position: "center",
     size: "auto",
@@ -118,7 +118,7 @@ let Reader = false;
 
 */
 
-let readPrevious = true;
+let readPrevious = false;
 
 /*
     onScreen [boolean/integer]
@@ -244,20 +244,6 @@ let sideBarMouse = true;
 */
 
 let sideBarMousewheel = false;
-
-/*
-    topBarBackdrop [boolean/integer]
-
-      Applications
-        Init
-
-      Result
-        add backdrop filter to top bar.
-
-*/
-
-let topBarBackdrop = false;
-
 
 /*
     toggleBorders [boolean/integer]
@@ -397,19 +383,6 @@ let titleTruncate = 125;
 let category = `Local`;
 
 /*
-    roundedEdge [boolean/integer]
-
-      Applications
-        xmlHTMLBuild
-
-      Result
-        round image edge border
-
-*/
-
-let roundedEdge = true;
-
-/*
     onlyImages [boolean/integer]
 
       Applications
@@ -476,7 +449,7 @@ let suggestionBuffer = 12;
 
 */
 
-let contentStatusBuffer = 3;
+let contentStatusBuffer = 7;
 
 /*
     omitGuide [boolean/integer]
@@ -698,9 +671,8 @@ const animations = [
 const settings = [
   { name: `List`, class: `List` },
   { name: `Blocks`, class: `Blocks` },
-  { name: `Crop Images`, class: `cropImages` },
   { name: `Fade in Images`, class: `fadeIntoView` },
-/*{ name: `Scroll Into View`, class: `scrollIntoView` }, */
+  { name: `Scroll Into View`, class: `scrollIntoView` },
   { name: `Sidebar Backdrop`, class: `sideBarBackdrop` },
   { name: `Sidebar Dock`, class: `sideBarDock` },
   { name: `Only Search`, class: `onlySearch` },
