@@ -87,8 +87,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
   ) {
     let newImg;
     newImg = new Image();
-    !src.match(/4cdn/g)
-      newImg.setAttribute(`src`, src);
+    newImg.setAttribute(`src`, src);
     newImg.onerror = function ()
       {
         if (
@@ -233,7 +232,9 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
                   itemImage.remove();
                 };
               }
-
+              if (
+                !src.match(/4cdn/g)
+              )
                 request.send();
               else {
                 Dimensions(
