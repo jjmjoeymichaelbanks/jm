@@ -314,7 +314,7 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               Height,
               Width
             );
-            itemImage.setAttribute(`src`, e.target.result);
+            itemImage.setAttribute(`src`, cors + e.target.result);
             itemPending.style.display = `none`;
             itemImage.style.display = `block`;
           }
