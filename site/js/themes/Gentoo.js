@@ -28,8 +28,4 @@ var Gentoo = function () {
     `--borderless-color`,
     `rgba(42, 45, 53, .6)`
   );
-  if (backgroundImage[0].path != `site/images/Belgin_London-Clock.png`)
-    backgroundImage[0].path = `site/images/Belgin_London-Clock.png`
-  document.querySelector(`#${backgroundImage[0].element}`)
-    .style.backgroundImage = `url(${backgroundImage[0].path})`
 };
