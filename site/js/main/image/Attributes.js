@@ -204,7 +204,6 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
               ) {
               var request = new XMLHttpRequest();
               request.open("GET", cors + src, true);
-              request.setRequestHeader(`Cross-Origin-Resource-Policy`, `cross-origin`);
               request.setRequestHeader(`Access-Control-Allow-Origin`, `*`);
               request.setRequestHeader(`X-Requested-With`, `*`);
               request.responseType = "blob";
@@ -265,7 +264,6 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
         { //safeSearch false
         var request = new XMLHttpRequest();
         request.open("GET", cors + src, true);
-        request.setRequestHeader(`Cross-Origin-Resource-Policy`, `cross-origin`);
         request.setRequestHeader(`Access-Control-Allow-Origin`, `*`);
         request.setRequestHeader(`X-Requested-With`, `*`);
         request.responseType = "blob";
@@ -317,11 +315,15 @@ var Attributes = function (empty, menuObject, pubIndex, src) {
     newImg.onerror = function () {
       if (
         onlyImages
-      )
-        _channel.querySelector(
-         `[aria-object='${menuObject}'][aria-item='${pubIndex}']`
-        )
-          .remove();
+      	  &&
+	    !src ||
+	    src == `null` ||
+	    src.match(/\.webm|\.mp4/g)
+         )
+	        _channel.querySelector(
+        	 `[aria-object='${menuObject}'][aria-item='${pubIndex}']`
+        	)
+          	  .remove();
       else {
         copyDownload.style.display = `none`;
         copyPicture.style.display = `none`;
