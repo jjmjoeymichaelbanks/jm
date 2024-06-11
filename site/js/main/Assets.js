@@ -158,6 +158,7 @@ var menu=[
 {id:`Reddit/California`,category:`Reddit`,title:``,description:`California subreddit for the Golden State of California for info on what's happening all across the state.`,uri:`https://www.reddit.com/r/California/.rss`,image:`California`,hash:`cA`,media:!1},
 {id:`Reddit/Cars`,category:`Reddit`,title:``,description:`Cars subreddit for the Golden State of bestCars in the world.`,uri:`https://www.reddit.com/r/Cars/.rss`,image:`Reddit`,hash:`cA`,media:!1},
 {id:`Reddit/Command Line`,category:`Reddit`,title:``,description:`Command Line subreddit shares tips, questions, and answers.`,uri:`https://www.reddit.com/r/commandline/.rss`,image:`CommandLine`,hash:`Ml`,media:!1},
+{id:`Reddit/comicbooks`,category:`Reddit`,title:``,description:`comicbooks subreddit for topic and series photos and chat.`,uri:`https://www.reddit.com/r/comicbooks/.rss`,image:`comicbooks`,hash:`b9`,media:!0},
 {id:`Reddit/Data Is Beautiful`,category:`Reddit`,title:``,description:`Data Is Beautiful subreddit for visualizations that effectively convey information.`,uri:`https://www.reddit.com/r/dataisbeautiful/.rss`,image:`DataIsBeautiful`,hash:`lD`,media:!0},
 {id:`Reddit/Redhat`,category:`Reddit`,title:``,description:`Debian subreddit has questions and topics revolving around Debian OS.`,uri:`https://www.reddit.com/r/debian/.rss`,image:`Debian`,hash:`dN`,media:!1},
 {id:`Reddit/Dell`,category:`Reddit`,title:``,description:`The unofficial subreddit for Dell Technologies.`,uri:`https://www.reddit.com/r/dell/.rss`,image:`Dell`,hash:`Dl`,media:!1},
