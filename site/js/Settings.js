@@ -395,7 +395,7 @@ let category = `Local`;
 
 */
 
-let onlyImages = true;
+let onlyImages = false;
 
 /*
     feedImages [boolean/integer]
