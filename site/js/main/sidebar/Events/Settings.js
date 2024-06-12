@@ -151,6 +151,31 @@ _sidebar
 
       else if (
         evt.target.classList.contains(
+          `onlyImages`
+        )
+      ) {
+        onlyImages = onlyImages != true
+        if (
+          onlyImages
+        ) {
+	  Request(id);
+          Star(
+            evt
+              .target,
+            onlyImages
+          );
+        } else if (onlyImages == false) {
+	  Request(id);
+          Star(
+            evt
+              .target,
+            onlyImages
+          );
+        }
+      }
+
+      else if (
+        evt.target.classList.contains(
           `onlySearch`
         )
       ) {
@@ -158,6 +183,9 @@ _sidebar
         if (
           onlySearch
         ) {
+	  document.querySelector(`#feed`).style.display = `none`;
+	  document.querySelector(`#quick .right`).style.display = `none`;
+          _quick.style.display = `none`;
           _options.style.display = `none`;
           _under.style.display = `none`;
           _show.style.display = `none`;
@@ -168,11 +196,12 @@ _sidebar
             onlySearch
           );
         } else if (onlySearch == false) {
+	  document.querySelector(`#feed`).style.cssText  = `flex !important`;
+	  document.querySelector(`#quick .right`).style.display = `block`;
           _under.style.display = `inline-flex`;
           _show.style.display = `inline-block`;
           _link.style.display = `inline-block`;
           _options.style.display = `block`;
-          _social.style.display = `block`;
           Star(
             evt
               .target,
