@@ -671,6 +671,8 @@ const animations = [
 const settings = [
   { name: `List`, class: `List` },
   { name: `Blocks`, class: `Blocks` },
+  { name: `Only Images`, class: `onlyImages` },
+  { name: `Only Search`, class: `onlySearch` },
   { name: `Fade in Images`, class: `fadeIntoView` },
   { name: `Scroll Into View`, class: `scrollIntoView` },
   { name: `Sidebar Backdrop`, class: `sideBarBackdrop` },
