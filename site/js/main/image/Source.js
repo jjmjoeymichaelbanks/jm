@@ -38,21 +38,23 @@ let Source =
             /https:\/\/external-preview\.redd.it\/.+?(gif|png|jpg)/g
           )
       )
-        src = String(
-          xhr
-            .getElementsByTagName(`content`)[0]
-            .childNodes[0].nodeValue.match(
-              /https:\/\/external-preview\.redd.it\/.+?(gif|png|jpg)/g
-            )
-        );
+        src = null 
+        //String(
+        //  xhr
+        //    .getElementsByTagName(`content`)[0]
+        //    .childNodes[0].nodeValue.match(
+        //      /https:\/\/external-preview\.redd.it\/.+?(gif|png|jpg)/g
+        //    )
+        //);
       else if (xhr.getElementsByTagName(`content`))
-        src = String(
-          xhr
-            .getElementsByTagName(`content`)[0]
-            .childNodes[0].nodeValue.match(
-              /\b(https?:\/\/\S*?\.(?:png|jpe?g|gif))/g
-            )
-        );
+        src = null
+        //String(
+        //  xhr
+        //    .getElementsByTagName(`content`)[0]
+        //    .childNodes[0].nodeValue.match(
+        //      /\b(https?:\/\/\S*?\.(?:png|jpe?g|gif))/g
+        //    )
+        //);
       else src = null;
     }
     else if (
